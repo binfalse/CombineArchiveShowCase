@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2006/vcard/ns#">
+  <rdf:Description rdf:about=".">
+    <dcterms:description>archive created using masymos2CAT by cloning the repository http://models.cellml.org/workspace/calzone_thieffry_tyson_novak_2007 (Tue Apr 07 14:18:50 CEST 2015) -- see https://sems.uni-rostock.de</dcterms:description>
+    <dcterms:creator>
+      <rdf:Bag>
+        <rdf:li rdf:parseType="Resource">
+          <vCard:n rdf:parseType="Resource">
+            <vCard:family-name>Scharm</vCard:family-name>
+            <vCard:given-name>Martin</vCard:given-name>
+          </vCard:n>
+          <vCard:email>martin.scharm@uni-rostock.de</vCard:email>
+          <vCard:org rdf:parseType="Resource">
+            <vCard:organization-name>University of Rostock</vCard:organization-name>
+          </vCard:org>
+        </rdf:li>
+      </rdf:Bag>
+    </dcterms:creator>
+    <dcterms:created rdf:parseType="Resource">
+      <dcterms:W3CDTF>2015-05-27T16:09:10Z</dcterms:W3CDTF>
+    </dcterms:created>
+    <dcterms:modified rdf:parseType="Resource">
+      <dcterms:W3CDTF>2015-05-27T16:09:10Z</dcterms:W3CDTF>
+    </dcterms:modified>
+    <dcterms:modified rdf:parseType="Resource">
+      <dcterms:W3CDTF>2015-05-27T16:09:28Z</dcterms:W3CDTF>
+    </dcterms:modified>
+    <dcterms:modified rdf:parseType="Resource">
+      <dcterms:W3CDTF>2015-05-27T16:09:32Z</dcterms:W3CDTF>
+    </dcterms:modified>
+    <dcterms:modified rdf:parseType="Resource">
+      <dcterms:W3CDTF>2015-05-27T16:09:34Z</dcterms:W3CDTF>
+    </dcterms:modified>
+    <dcterms:modified rdf:parseType="Resource">
+      <dcterms:W3CDTF>2015-05-27T16:09:36Z</dcterms:W3CDTF>
+    </dcterms:modified>
+  </rdf:Description>
+  <rdf:Description rdf:about="/model/calzone_2007.svg">
+    <dcterms:creator>
+      <rdf:Bag>
+        <rdf:li rdf:parseType="Resource">
+          <vCard:n rdf:parseType="Resource">
+            <vCard:given-name>Hanne</vCard:given-name>
+          </vCard:n>
+          <vCard:email>Hanne@hanne-nielsens-macbook.local</vCard:email>
+        </rdf:li>
+      </rdf:Bag>
+    </dcterms:creator>
+    <dcterms:created rdf:parseType="Resource">
+      <dcterms:W3CDTF>2009-10-27T00:37:35Z</dcterms:W3CDTF>
+    </dcterms:created>
+    <dcterms:modified rdf:parseType="Resource">
+      <dcterms:W3CDTF>2009-10-27T00:37:35Z</dcterms:W3CDTF>
+    </dcterms:modified>
+  </rdf:Description>
+  <rdf:Description rdf:about="/model/calzone_thieffry_tyson_novak_2007.cellml">
+    <dcterms:creator>
+      <rdf:Bag>
+        <rdf:li rdf:parseType="Resource">
+          <vCard:n rdf:parseType="Resource">
+            <vCard:given-name>pmr2.import</vCard:given-name>
+          </vCard:n>
+          <vCard:email>nobody@models.cellml.org</vCard:email>
+        </rdf:li>
+      </rdf:Bag>
+    </dcterms:creator>
+    <dcterms:created rdf:parseType="Resource">
+      <dcterms:W3CDTF>2009-02-18T11:19:58Z</dcterms:W3CDTF>
+    </dcterms:created>
+    <dcterms:modified rdf:parseType="Resource">
+      <dcterms:W3CDTF>2009-06-17T02:42:54Z</dcterms:W3CDTF>
+    </dcterms:modified>
+    <dcterms:modified rdf:parseType="Resource">
+      <dcterms:W3CDTF>2009-02-18T11:19:58Z</dcterms:W3CDTF>
+    </dcterms:modified>
+  </rdf:Description>
+  <rdf:Description rdf:about="/model/calzone_2007.png">
+    <dcterms:creator>
+      <rdf:Bag>
+        <rdf:li rdf:parseType="Resource">
+          <vCard:n rdf:parseType="Resource">
+            <vCard:family-name>Lloyd</vCard:family-name>
+            <vCard:given-name>Catherine</vCard:given-name>
+          </vCard:n>
+          <vCard:email>c.lloyd@auckland.ac.nz</vCard:email>
+        </rdf:li>
+      </rdf:Bag>
+    </dcterms:creator>
+    <dcterms:created rdf:parseType="Resource">
+      <dcterms:W3CDTF>2009-10-22T03:46:48Z</dcterms:W3CDTF>
+    </dcterms:created>
+    <dcterms:modified rdf:parseType="Resource">
+      <dcterms:W3CDTF>2009-10-22T03:46:48Z</dcterms:W3CDTF>
+    </dcterms:modified>
+  </rdf:Description>
+  <rdf:Description rdf:about="/model/calzone_2007.ai">
+    <dcterms:creator>
+      <rdf:Bag>
+        <rdf:li rdf:parseType="Resource">
+          <vCard:n rdf:parseType="Resource">
+            <vCard:given-name>Hanne</vCard:given-name>
+          </vCard:n>
+          <vCard:email>Hanne@hanne-nielsens-macbook.local</vCard:email>
+        </rdf:li>
+      </rdf:Bag>
+    </dcterms:creator>
+    <dcterms:created rdf:parseType="Resource">
+      <dcterms:W3CDTF>2009-10-27T00:37:35Z</dcterms:W3CDTF>
+    </dcterms:created>
+    <dcterms:modified rdf:parseType="Resource">
+      <dcterms:W3CDTF>2009-10-27T00:37:35Z</dcterms:W3CDTF>
+    </dcterms:modified>
+  </rdf:Description>
+</rdf:RDF>
