@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omexManifest xmlns="http://identifiers.org/combine.specifications/omex-manifest">
+  <content location="." format="http://identifiers.org/combine.specifications/omex" />
+  <content location="./manifest.xml" format="http://identifiers.org/combine.specifications/omex-manifest" />
+  <content location="./README.md" format="http://purl.org/NET/mediatypes/text/x-markdown" master="false"/>
+</omexManifest>
