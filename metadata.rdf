@@ -35,6 +35,29 @@
       <dcterms:W3CDTF>2015-05-27T16:09:36Z</dcterms:W3CDTF>
     </dcterms:modified>
   </rdf:Description>
+	<rdf:Description rdf:about="/README.md">
+    <dcterms:description>README describing the archive</dcterms:description>
+    <dcterms:creator>
+      <rdf:Bag>
+        <rdf:li rdf:parseType="Resource">
+          <vCard:n rdf:parseType="Resource">
+            <vCard:family-name>Scharm</vCard:family-name>
+            <vCard:given-name>Martin</vCard:given-name>
+          </vCard:n>
+          <vCard:email>martin.scharm@uni-rostock.de</vCard:email>
+          <vCard:org rdf:parseType="Resource">
+            <vCard:organization-name>University of Rostock</vCard:organization-name>
+          </vCard:org>
+        </rdf:li>
+      </rdf:Bag>
+    </dcterms:creator>
+    <dcterms:created rdf:parseType="Resource">
+      <dcterms:W3CDTF>2015-06-03T17:21:10Z</dcterms:W3CDTF>
+    </dcterms:created>
+    <dcterms:modified rdf:parseType="Resource">
+      <dcterms:W3CDTF>2015-06-03T17:21:10Z</dcterms:W3CDTF>
+    </dcterms:modified>
+  </rdf:Description>
   <rdf:Description rdf:about="/model/calzone_2007.svg">
     <dcterms:creator>
       <rdf:Bag>
