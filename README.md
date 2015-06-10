@@ -1,4 +1,4 @@
-# CombineArchiveAsad
+# CombineArchiveShowCase
 
 This is going to be a fully featured [CombineArchive](http://combinearchive.org) that will help demonstrating the concepts and best practices.
 
