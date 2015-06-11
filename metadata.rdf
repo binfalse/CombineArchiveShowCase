@@ -52,6 +52,9 @@
 		<dcterms:modified rdf:parseType="Resource">
 			<dcterms:W3CDTF>2015-06-11T16:43:21Z</dcterms:W3CDTF>
 		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2015-06-11T16:47:16Z</dcterms:W3CDTF>
+		</dcterms:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="/README.md">
 		<dcterms:description>README describing the archive</dcterms:description>
