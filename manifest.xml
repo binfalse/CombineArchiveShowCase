@@ -14,5 +14,7 @@
   <content location="./documentation/Calzone2007-supplementary-material.pdf" format="http://purl.org/NET/mediatypes/application/pdf" />
   <content location="./result/Fig1B-top-webtools.png" format="http://purl.org/NET/mediatypes/image/png" />
   <content location="./result/Fig1B-bottom-webtools.png" format="http://purl.org/NET/mediatypes/image/png" />
+  <content location="./result/Fig1B-top-COPASI.svg" format="http://purl.org/NET/mediatypes/image/svg+xml" />
+  <content location="./result/Fig1B-bottom-COPASI.svg" format="http://purl.org/NET/mediatypes/image/svg+xml" />
   <content location="./metadata.rdf" format="http://identifiers.org/combine.specifications/omex-metadata" />
 </omexManifest>
