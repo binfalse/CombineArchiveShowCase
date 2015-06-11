@@ -208,4 +208,69 @@
       <dcterms:W3CDTF>2014-03-26T11:22:15Z</dcterms:W3CDTF>
     </dcterms:modified>
   </rdf:Description>
+  <rdf:Description rdf:about="/documentation/Calzone2007-supplementary-material.pdf">
+    <dcterms:description>Supplementary material published along with article /documentation/Calzone2007.pdf, downloaded June 11th, 2015. It shows some supplementary figures.</dcterms:description>
+    <dcterms:creator>
+      <rdf:Bag>
+        <rdf:li rdf:parseType="Resource">
+          <vCard:n rdf:parseType="Resource">
+            <vCard:family-name>Calzone</vCard:family-name>
+            <vCard:given-name>Laurence</vCard:given-name>
+          </vCard:n>
+          <vCard:org rdf:parseType="Resource">
+            <vCard:organization-name>Molecular Network Dynamics Research Group of Hungarian Academy of Sciences and Budapest University of Technology and Economics, Budapest</vCard:organization-name>
+          </vCard:org>
+        </rdf:li>
+      </rdf:Bag>
+    </dcterms:creator>
+    <dcterms:creator>
+      <rdf:Bag>
+        <rdf:li rdf:parseType="Resource">
+          <vCard:n rdf:parseType="Resource">
+            <vCard:family-name>Thieffry</vCard:family-name>
+            <vCard:given-name>Denis</vCard:given-name>
+          </vCard:n>
+          <vCard:org rdf:parseType="Resource">
+            <vCard:organization-name>Université de la Méditerranée, Campus Scientifique de Luminy, Case 928, Marseille, France</vCard:organization-name>
+          </vCard:org>
+        </rdf:li>
+      </rdf:Bag>
+    </dcterms:creator>
+    <dcterms:creator>
+      <rdf:Bag>
+        <rdf:li rdf:parseType="Resource">
+          <vCard:n rdf:parseType="Resource">
+            <vCard:family-name>Tyson</vCard:family-name>
+            <vCard:given-name>John J</vCard:given-name>
+          </vCard:n>
+          <vCard:org rdf:parseType="Resource">
+            <vCard:organization-name>Department of Biological Sciences, Virginia Polytechnic Institute and State University, Blacksburg, VA, USA</vCard:organization-name>
+          </vCard:org>
+        </rdf:li>
+      </rdf:Bag>
+    </dcterms:creator>
+    <dcterms:creator>
+      <rdf:Bag>
+        <rdf:li rdf:parseType="Resource">
+          <vCard:n rdf:parseType="Resource">
+            <vCard:family-name>Novak</vCard:family-name>
+            <vCard:given-name>Bela</vCard:given-name>
+          </vCard:n>
+          <vCard:email>bela.novak@bioch.ox.ac.uk</vCard:email>
+          <vCard:org rdf:parseType="Resource">
+            <vCard:organization-name>Molecular Network Dynamics Research Group of Hungarian Academy of Sciences and Budapest University of Technology and Economics, Budapest</vCard:organization-name>
+          </vCard:org>
+        </rdf:li>
+      </rdf:Bag>
+    </dcterms:creator>
+    <dcterms:created rdf:parseType="Resource">
+      <dcterms:W3CDTF>2007-06-01T09:56:45Z</dcterms:W3CDTF>
+    </dcterms:created>
+    <dcterms:modified rdf:parseType="Resource">
+      <dcterms:W3CDTF>2007-06-01T09:56:45Z</dcterms:W3CDTF>
+    </dcterms:modified>
+    <dcterms:modified rdf:parseType="Resource">
+      <dcterms:W3CDTF>2007-06-01T11:55:19Z</dcterms:W3CDTF>
+    </dcterms:modified>
+  </rdf:Description>
 </rdf:RDF>
