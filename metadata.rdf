@@ -60,6 +60,9 @@
     <dcterms:modified rdf:parseType="Resource">
       <dcterms:W3CDTF>2015-06-03T17:21:10Z</dcterms:W3CDTF>
     </dcterms:modified>
+    <dcterms:modified rdf:parseType="Resource">
+      <dcterms:W3CDTF>2015-06-10T19:25:12Z</dcterms:W3CDTF>
+    </dcterms:modified>
   </rdf:Description>
   <rdf:Description rdf:about="/model/calzone_2007.svg">
     <dcterms:description>Figure visualising the model described in /documentation/Calzone2007.pdf . This picture was downloaded from the CellML model repository May 27th, 2015.</dcterms:description>
