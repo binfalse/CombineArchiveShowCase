@@ -3,6 +3,7 @@
   <content location="." format="http://identifiers.org/combine.specifications/omex" />
   <content location="./manifest.xml" format="http://identifiers.org/combine.specifications/omex-manifest" />
   <content location="./README.md" format="http://purl.org/NET/mediatypes/text/x-markdown" master="false"/>
+  <content location="./model/BIOMD0000000144.xml" format="http://identifiers.org/combine.specifications/sbml.level-2.version-1" />
   <content location="./model/calzone_2007.ai" format="http://purl.org/NET/mediatypes/application/illustrator" />
   <content location="./model/calzone_2007.png" format="http://purl.org/NET/mediatypes/image/png" />
   <content location="./model/calzone_2007.svg" format="http://purl.org/NET/mediatypes/image/svg+xml" />

@@ -62,6 +62,7 @@
     </dcterms:modified>
   </rdf:Description>
   <rdf:Description rdf:about="/model/calzone_2007.svg">
+    <dcterms:description>Figure visualising the model described in /documentation/Calzone2007.pdf . This picture was downloaded from the CellML model repository May 27th, 2015.</dcterms:description>
     <dcterms:creator>
       <rdf:Bag>
         <rdf:li rdf:parseType="Resource">
@@ -80,6 +81,7 @@
     </dcterms:modified>
   </rdf:Description>
   <rdf:Description rdf:about="/model/calzone_thieffry_tyson_novak_2007.cellml">
+    <dcterms:description>Model encoded in CellML as described in /documentation/Calzone2007.pdf . This model was downloaded from the CellML model repository May 27th, 2015.</dcterms:description>
     <dcterms:creator>
       <rdf:Bag>
         <rdf:li rdf:parseType="Resource">
@@ -101,6 +103,7 @@
     </dcterms:modified>
   </rdf:Description>
   <rdf:Description rdf:about="/model/calzone_2007.png">
+    <dcterms:description>Figure visualising the model described in /documentation/Calzone2007.pdf . This picture was downloaded from the CellML model repository May 27th, 2015.</dcterms:description>
     <dcterms:creator>
       <rdf:Bag>
         <rdf:li rdf:parseType="Resource">
@@ -120,6 +123,7 @@
     </dcterms:modified>
   </rdf:Description>
   <rdf:Description rdf:about="/model/calzone_2007.ai">
+    <dcterms:description>Figure visualising the model described in /documentation/Calzone2007.pdf . This picture was downloaded from the CellML model repository May 27th, 2015.</dcterms:description>
     <dcterms:creator>
       <rdf:Bag>
         <rdf:li rdf:parseType="Resource">
@@ -138,7 +142,7 @@
     </dcterms:modified>
   </rdf:Description>
   <rdf:Description rdf:about="/documentation/Calzone2007.pdf">
-    <dcterms:description>Article published in Mol Syst Biol. 2007; 3: 131. DOI:  10.1038/msb4100171, downloaded June 11th, 2015 . It describes the model calzone_thieffry_tyson_novak_2007.cellml.</dcterms:description>
+    <dcterms:description>Article published in Mol Syst Biol. 2007; 3: 131. DOI:  10.1038/msb4100171, downloaded June 11th, 2015 . It describes the models /model/calzone_thieffry_tyson_novak_2007.cellml and /model/BIOMD0000000144.xml .</dcterms:description>
     <dcterms:creator>
       <rdf:Bag>
         <rdf:li rdf:parseType="Resource">
@@ -216,6 +220,7 @@
           <vCard:n rdf:parseType="Resource">
             <vCard:family-name>Calzone</vCard:family-name>
             <vCard:given-name>Laurence</vCard:given-name>
+                <vCard:email>laurence.calzone@curie.fr</vCard:email>
           </vCard:n>
           <vCard:org rdf:parseType="Resource">
             <vCard:organization-name>Molecular Network Dynamics Research Group of Hungarian Academy of Sciences and Budapest University of Technology and Economics, Budapest</vCard:organization-name>
@@ -273,4 +278,83 @@
       <dcterms:W3CDTF>2007-06-01T11:55:19Z</dcterms:W3CDTF>
     </dcterms:modified>
   </rdf:Description>
+	<rdf:Description rdf:about="/model/BIOMD0000000144.xml">
+    <dcterms:description>Model encoded in SBML as described in /documentation/Calzone2007.pdf . This model was downloaded from the BioModels Database Jun 11th, 2015. Modification times were taken from the model code and enriched by comparing all releases of the BioModels Database.</dcterms:description>
+		<dc:creator>
+			<rdf:Bag>
+				<rdf:li rdf:parseType="Resource">
+					<vCard:n rdf:parseType="Resource">
+						<vCard:family-name>He</vCard:family-name>
+						<vCard:given-name>Enuo</vCard:given-name>
+					</vCard:n>
+					<vCard:email>enuo@caltech.edu</vCard:email>
+					<vCard:org rdf:parseType="Resource">
+						<vCard:organization-name>BNMC</vCard:organization-name>
+					</vCard:org>
+				</rdf:li>
+				<rdf:li rdf:parseType="Resource">
+					<vCard:n rdf:parseType="Resource">
+						<vCard:family-name>Le Novère</vCard:family-name>
+						<vCard:given-name>Nicolas</vCard:given-name>
+					</vCard:n>
+					<vCard:email>lenov@ebi.ac.uk</vCard:email>
+					<vCard:org rdf:parseType="Resource">
+						<vCard:organization-name>EMBL-EBI</vCard:organization-name>
+					</vCard:org>
+				</rdf:li>
+				<rdf:li rdf:parseType="Resource">
+					<vCard:n rdf:parseType="Resource">
+						<vCard:family-name>Calzone</vCard:family-name>
+						<vCard:given-name>Laurence</vCard:given-name>
+					</vCard:n>
+					<vCard:email>laurence.calzone@curie.fr</vCard:email>
+					<vCard:org rdf:parseType="Resource">
+						<vCard:organization-name>Institut Curie</vCard:organization-name>
+					</vCard:org>
+				</rdf:li>
+			</rdf:Bag>
+		</dc:creator>
+		<dcterms:created rdf:parseType="Resource">
+			<dcterms:W3CDTF>2007-06-08T08:29:58Z</dcterms:W3CDTF>
+		</dcterms:created>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2008-03-28T00:00:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2008-08-21T00:00:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2008-12-03T00:00:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2009-03-25T00:00:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2009-09-02T00:00:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2010-01-26T00:00:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2010-09-30T00:00:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2011-04-15T00:00:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2012-02-08T00:00:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2012-05-20T00:00:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2012-07-05T16:48:32Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2012-08-11T00:00:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2012-12-12T00:00:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
+	</rdf:Description>
 </rdf:RDF>
