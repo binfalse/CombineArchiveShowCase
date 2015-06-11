@@ -283,7 +283,7 @@
 	</rdf:Description>
 	<rdf:Description rdf:about="/model/BIOMD0000000144.xml">
 		<dcterms:description>Model encoded in SBML as described in /documentation/Calzone2007.pdf . This model was downloaded from the BioModels Database Jun 11th, 2015. Modification times were taken from the model code and enriched by comparing all releases of the BioModels Database.</dcterms:description>
-		<dc:creator>
+		<dcterms:creator>
 			<rdf:Bag>
 				<rdf:li rdf:parseType="Resource">
 					<vCard:n rdf:parseType="Resource">
@@ -316,7 +316,7 @@
 					</vCard:org>
 				</rdf:li>
 			</rdf:Bag>
-		</dc:creator>
+		</dcterms:creator>
 		<dcterms:created rdf:parseType="Resource">
 			<dcterms:W3CDTF>2007-06-08T08:29:58Z</dcterms:W3CDTF>
 		</dcterms:created>
