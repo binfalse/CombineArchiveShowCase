@@ -22,3 +22,11 @@ The files of the simulation study are organised in folders:
 * **result:** Files that were obtained by running the *in silico* experiment, such as graphs and tables.
 
 Please note, that this structure is not mandatory.
+
+## Explore the CombineArchive
+
+To conveniently explore the contents of this CombineArchive you may open it in the [CombineArchive WebInterface](http://webcat.sems.uni-rostock.de/). Just import it using the following link:
+
+[http://webcat.sems.uni-rostock.de/rest/import?name=AllSingingAllDancing&remote=http://scripts.sems.uni-rostock.de/getshowcase.php](http://webcat.sems.uni-rostock.de/rest/import?name=AllSingingAllDancing&remote=http://scripts.sems.uni-rostock.de/getshowcase.php)
+
+You can of course also clone this repository or [download the latest version of this archive](http://scripts.sems.uni-rostock.de/getshowcase.php).
