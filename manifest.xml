@@ -13,7 +13,7 @@
   <content location="./model/sbgn/Calzone2007.png" format="http://purl.org/NET/mediatypes/image/png" />
   <content location="./model/sbgn/Calzone2007.pdf" format="http://purl.org/NET/mediatypes/application/pdf" />
   <content location="./experiment/Calzone2007-simulation-all-figures.xml" format="http://identifiers.org/combine.specifications/sed-ml.level-1.version-1" />
-  <content location="./experiment/Calzone2007-simulation-figure-1B.xml" format="http://identifiers.org/combine.specifications/sed-ml.level-1.version-1" master="false"/>
+  <content location="./experiment/Calzone2007-simulation-figure-1B.xml" format="http://identifiers.org/combine.specifications/sed-ml.level-1.version-1" master="true"/>
   <content location="./documentation/Calzone2007.pdf" format="http://purl.org/NET/mediatypes/application/pdf" />
   <content location="./documentation/Calzone2007-supplementary-material.pdf" format="http://purl.org/NET/mediatypes/application/pdf" />
   <content location="./result/Fig1B-top-webtools.png" format="http://purl.org/NET/mediatypes/image/png" />
