@@ -381,7 +381,7 @@
 			<dcterms:W3CDTF>2012-12-12T00:00:00Z</dcterms:W3CDTF>
 		</dcterms:modified>
 	</rdf:Description>
-	<rdf:Description rdf:about="/experiment/Calzone2007-simulation-all-figures.xml">
+	<rdf:Description rdf:about="/experiment/Calzone2007-default-simulation.xml">
 		<dcterms:description>Simulation description created using the SED-ML Web Tools at http://sysbioapps.dyndns.org/SED-ML%20Web%20Tools .</dcterms:description>
 		<dcterms:creator>
 			<rdf:Bag>
@@ -405,7 +405,7 @@
 		</dcterms:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="/experiment/Calzone2007-simulation-figure-1B.xml">
-		<dcterms:description>Simulation description adapted from /experiment/Calzone2007-simulation-all-figures.xml . This SED-ML script reproduces Figure 1B of the article /documentation/Calzone2007.pdf .</dcterms:description>
+		<dcterms:description>Simulation description adapted from /experiment/Calzone2007-default-simulation.xml . This SED-ML script reproduces Figure 1B of the article /documentation/Calzone2007.pdf .</dcterms:description>
 		<dcterms:creator>
 			<rdf:Bag>
 				<rdf:li rdf:parseType="Resource">
