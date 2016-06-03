@@ -522,6 +522,43 @@
 			<dcterms:W3CDTF>2015-06-11T13:31:54Z</dcterms:W3CDTF>
 		</dcterms:modified>
 	</rdf:Description>
+	<rdf:Description rdf:about="/model/sbgn/Calzone2007.sbgn">
+		<dcterms:description>Figure visualising the model as encoded in /model/BIOMD0000000144.xml , created using SBGN-ED (VANTED V2.1.0).</dcterms:description>
+		<dcterms:creator>
+			<rdf:Bag>
+				<rdf:li rdf:parseType="Resource">
+					<vCard:n rdf:parseType="Resource">
+						<vCard:family-name>Scharm</vCard:family-name>
+						<vCard:given-name>Martin</vCard:given-name>
+					</vCard:n>
+					<vCard:email>martin.scharm@uni-rostock.de</vCard:email>
+					<vCard:org rdf:parseType="Resource">
+						<vCard:organization-name>University of Rostock</vCard:organization-name>
+					</vCard:org>
+				</rdf:li>
+			</rdf:Bag>
+		</dcterms:creator>
+		<dcterms:creator>
+			<rdf:Bag>
+				<rdf:li rdf:parseType="Resource">
+					<vCard:n rdf:parseType="Resource">
+						<vCard:family-name>Toure</vCard:family-name>
+						<vCard:given-name>Vasundra</vCard:given-name>
+					</vCard:n>
+					<vCard:email>vasundra.toure@uni-rostock.de</vCard:email>
+					<vCard:org rdf:parseType="Resource">
+						<vCard:organization-name>University of Rostock</vCard:organization-name>
+					</vCard:org>
+				</rdf:li>
+			</rdf:Bag>
+		</dcterms:creator>
+		<dcterms:created rdf:parseType="Resource">
+			<dcterms:W3CDTF>2016-06-03T21:15:39Z</dcterms:W3CDTF>
+		</dcterms:created>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2016-06-03T21:15:39Z</dcterms:W3CDTF>
+		</dcterms:modified>
+	</rdf:Description>
 	<rdf:Description rdf:about="/model/sbgn/Calzone2007.gml">
 		<dcterms:description>Figure visualising the model as encoded in /model/BIOMD0000000144.xml , created using SBGN-ED (VANTED V2.1.0).</dcterms:description>
 		<dcterms:creator>
@@ -538,11 +575,28 @@
 				</rdf:li>
 			</rdf:Bag>
 		</dcterms:creator>
+		<dcterms:creator>
+			<rdf:Bag>
+				<rdf:li rdf:parseType="Resource">
+					<vCard:n rdf:parseType="Resource">
+						<vCard:family-name>Toure</vCard:family-name>
+						<vCard:given-name>Vasundra</vCard:given-name>
+					</vCard:n>
+					<vCard:email>vasundra.toure@uni-rostock.de</vCard:email>
+					<vCard:org rdf:parseType="Resource">
+						<vCard:organization-name>University of Rostock</vCard:organization-name>
+					</vCard:org>
+				</rdf:li>
+			</rdf:Bag>
+		</dcterms:creator>
 		<dcterms:created rdf:parseType="Resource">
 			<dcterms:W3CDTF>2015-06-11T15:48:43Z</dcterms:W3CDTF>
 		</dcterms:created>
 		<dcterms:modified rdf:parseType="Resource">
 			<dcterms:W3CDTF>2015-06-11T15:48:43Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2016-06-03T21:15:39Z</dcterms:W3CDTF>
 		</dcterms:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="/model/sbgn/Calzone2007.graphml">
@@ -561,11 +615,28 @@
 				</rdf:li>
 			</rdf:Bag>
 		</dcterms:creator>
+		<dcterms:creator>
+			<rdf:Bag>
+				<rdf:li rdf:parseType="Resource">
+					<vCard:n rdf:parseType="Resource">
+						<vCard:family-name>Toure</vCard:family-name>
+						<vCard:given-name>Vasundra</vCard:given-name>
+					</vCard:n>
+					<vCard:email>vasundra.toure@uni-rostock.de</vCard:email>
+					<vCard:org rdf:parseType="Resource">
+						<vCard:organization-name>University of Rostock</vCard:organization-name>
+					</vCard:org>
+				</rdf:li>
+			</rdf:Bag>
+		</dcterms:creator>
 		<dcterms:created rdf:parseType="Resource">
 			<dcterms:W3CDTF>2015-06-11T15:52:29Z</dcterms:W3CDTF>
 		</dcterms:created>
 		<dcterms:modified rdf:parseType="Resource">
 			<dcterms:W3CDTF>2015-06-11T15:52:29Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2016-06-03T21:15:39Z</dcterms:W3CDTF>
 		</dcterms:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="/model/sbgn/Calzone2007.pdf">
@@ -584,11 +655,28 @@
 				</rdf:li>
 			</rdf:Bag>
 		</dcterms:creator>
+		<dcterms:creator>
+			<rdf:Bag>
+				<rdf:li rdf:parseType="Resource">
+					<vCard:n rdf:parseType="Resource">
+						<vCard:family-name>Toure</vCard:family-name>
+						<vCard:given-name>Vasundra</vCard:given-name>
+					</vCard:n>
+					<vCard:email>vasundra.toure@uni-rostock.de</vCard:email>
+					<vCard:org rdf:parseType="Resource">
+						<vCard:organization-name>University of Rostock</vCard:organization-name>
+					</vCard:org>
+				</rdf:li>
+			</rdf:Bag>
+		</dcterms:creator>
 		<dcterms:created rdf:parseType="Resource">
 			<dcterms:W3CDTF>2015-06-11T15:54:28Z</dcterms:W3CDTF>
 		</dcterms:created>
 		<dcterms:modified rdf:parseType="Resource">
 			<dcterms:W3CDTF>2015-06-11T15:54:28Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2016-06-03T21:15:39Z</dcterms:W3CDTF>
 		</dcterms:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="/model/sbgn/Calzone2007.png">
@@ -607,11 +695,28 @@
 				</rdf:li>
 			</rdf:Bag>
 		</dcterms:creator>
+		<dcterms:creator>
+			<rdf:Bag>
+				<rdf:li rdf:parseType="Resource">
+					<vCard:n rdf:parseType="Resource">
+						<vCard:family-name>Toure</vCard:family-name>
+						<vCard:given-name>Vasundra</vCard:given-name>
+					</vCard:n>
+					<vCard:email>vasundra.toure@uni-rostock.de</vCard:email>
+					<vCard:org rdf:parseType="Resource">
+						<vCard:organization-name>University of Rostock</vCard:organization-name>
+					</vCard:org>
+				</rdf:li>
+			</rdf:Bag>
+		</dcterms:creator>
 		<dcterms:created rdf:parseType="Resource">
 			<dcterms:W3CDTF>2015-06-11T15:55:16Z</dcterms:W3CDTF>
 		</dcterms:created>
 		<dcterms:modified rdf:parseType="Resource">
 			<dcterms:W3CDTF>2015-06-11T15:55:16Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2016-06-03T21:15:39Z</dcterms:W3CDTF>
 		</dcterms:modified>
 	</rdf:Description>
 </rdf:RDF>

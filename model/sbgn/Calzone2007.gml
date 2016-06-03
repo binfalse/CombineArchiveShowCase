@@ -1,4371 +1,27 @@
-# generated with VANTED V2.1.0 at Thu Jun 11 15:48:43 BST 2015
+# generated with VANTED V2.6.2 at Sun May 22 17:05:21 CEST 2016
 graph [
-  background_coloring "true"
-  cluster_colors "255,204,204,255:0,0,0,255;204,255,255,255:0,0,0,255"
-  clusterbackground_fill_outer_region "false"
-  clusterbackground_grid 50.0
-  clusterbackground_low_alpha 0.2
-  clusterbackground_radius 200.0
-  clusterbackground_space_fill "true"
-  level 2
+  graphbackgroundcolor "#ffffff"
   sbgn [
     role "PROCESSDESCRIPTION"
-  ]
-  sbml [
-    model_meta_id "metaid_0000002"
-    model_name "Calzone2007_CellCycle"
-    model_sbml_id "Model_generated_by_BIOCHAM"
-    namespace "xmlns:html=\\\"http://www.w3.org/1999/xhtml\\\" xmlns:jigcell=\\\"http://www.sbml.org/2001/ns/jigcell\\\" xmlns:sbml=\\\"http://www.sbml.org/sbml/level2\\\" xmlns:rdf=\\\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\\\" xmlns:math=\\\"http://www.w3.org/1998/Math/MathML\\\" "
-    sbml_meta_id "metaid_0000001"
-  ]
-  sbml_assignment_rule_1 [
-    sbml_assignment_rule_1_assignmnet_variable "CycBT"
-    sbml_assignment_rule_1_function "(1-N*E_1)*(MPFc+preMPFc)+N*E_1*(MPFn+preMPFn)"
-    sbml_assignment_rule_1_meta_id "metaid_0000081"
-  ]
-  sbml_assignment_rule_2 [
-    sbml_assignment_rule_2_assignmnet_variable "StgPT"
-    sbml_assignment_rule_2_function "(1-N*E_1)*StgPc+N*E_1*StgPn"
-    sbml_assignment_rule_2_meta_id "metaid_0000083"
-  ]
-  sbml_assignment_rule_3 [
-    sbml_assignment_rule_3_assignmnet_variable "Wee1Pc"
-    sbml_assignment_rule_3_function "(Wee1T-N*E_1*(Wee1n+Wee1Pn))/(1-N*E_1)-Wee1c"
-    sbml_assignment_rule_3_meta_id "metaid_0000084"
-  ]
-  sbml_compartment_cytoplasm [
-    sbml_compartment_cytoplasm_id "cytoplasm"
-    sbml_compartment_cytoplasm_meta_id "metaid_0000141"
-    sbml_compartment_cytoplasm_size "1.0"
-  ]
-  sbml_compartment_nuclei [
-    sbml_compartment_nuclei_id "nuclei"
-    sbml_compartment_nuclei_meta_id "metaid_0000140"
-    sbml_compartment_nuclei_size "1.0"
-  ]
-  sbml_event_1 [
-    sbml_event_1_event_assignment_10_function "StgPn/1.95"
-    sbml_event_1_event_assignment_10_meta_id "_296309"
-    sbml_event_1_event_assignment_10_variable "StgPn"
-    sbml_event_1_event_assignment_11_function "MPFc*(1-N*E_1)/(1-1.95*N*E_1)"
-    sbml_event_1_event_assignment_11_meta_id "_296321"
-    sbml_event_1_event_assignment_11_variable "MPFc"
-    sbml_event_1_event_assignment_1_function "factor_1*N"
-    sbml_event_1_event_assignment_1_meta_id "_296201"
-    sbml_event_1_event_assignment_1_variable "N"
-    sbml_event_1_event_assignment_2_function "MPFn/1.95"
-    sbml_event_1_event_assignment_2_meta_id "_296213"
-    sbml_event_1_event_assignment_2_variable "MPFn"
-    sbml_event_1_event_assignment_3_function "preMPFn/1.95"
-    sbml_event_1_event_assignment_3_meta_id "_296225"
-    sbml_event_1_event_assignment_3_variable "preMPFn"
-    sbml_event_1_event_assignment_4_function "Wee1n/1.95"
-    sbml_event_1_event_assignment_4_meta_id "_296237"
-    sbml_event_1_event_assignment_4_variable "Wee1n"
-    sbml_event_1_event_assignment_5_function "Wee1Pn/1.95"
-    sbml_event_1_event_assignment_5_meta_id "_296249"
-    sbml_event_1_event_assignment_5_variable "Wee1Pn"
-    sbml_event_1_event_assignment_6_function "Wee1c*(1-N*E_1)/(1-1.95*N*E_1)"
-    sbml_event_1_event_assignment_6_meta_id "_296261"
-    sbml_event_1_event_assignment_6_variable "Wee1c"
-    sbml_event_1_event_assignment_7_function "Stgn/1.95"
-    sbml_event_1_event_assignment_7_meta_id "_296273"
-    sbml_event_1_event_assignment_7_variable "Stgn"
-    sbml_event_1_event_assignment_8_function "StgPc*(1-N*E_1)/(1-1.95*N*E_1)"
-    sbml_event_1_event_assignment_8_meta_id "_296285"
-    sbml_event_1_event_assignment_8_variable "StgPc"
-    sbml_event_1_event_assignment_9_function "Stgc*(1-N*E_1)/(1-1.95*N*E_1)"
-    sbml_event_1_event_assignment_9_meta_id "_296297"
-    sbml_event_1_event_assignment_9_variable "Stgc"
-    sbml_event_1_meta_id "metaid_0000139"
-    sbml_event_1_trigger_function "FZYa >= kez_1"
-  ]
-  sbml_parameter_1 [
-    sbml_parameter_1_id "ksc"
-    sbml_parameter_1_meta_id "metaid_0000010"
-    sbml_parameter_1_name "ksc"
-    sbml_parameter_1_value 0.01
-  ]
-  sbml_parameter_10 [
-    sbml_parameter_10_id "kwee"
-    sbml_parameter_10_meta_id "metaid_0000019"
-    sbml_parameter_10_name "kweepp"
-    sbml_parameter_10_value 1.0
-  ]
-  sbml_parameter_11 [
-    sbml_parameter_11_id "kstgp"
-    sbml_parameter_11_meta_id "metaid_0000020"
-    sbml_parameter_11_name "kstgp"
-    sbml_parameter_11_value 0.2
-  ]
-  sbml_parameter_12 [
-    sbml_parameter_12_id "kstg"
-    sbml_parameter_12_meta_id "metaid_0000021"
-    sbml_parameter_12_name "kstgpp"
-    sbml_parameter_12_value 2.0
-  ]
-  sbml_parameter_13 [
-    sbml_parameter_13_id "ksstg"
-    sbml_parameter_13_meta_id "metaid_0000022"
-    sbml_parameter_13_name "ksstg"
-    sbml_parameter_13_value 0.0
-  ]
-  sbml_parameter_14 [
-    sbml_parameter_14_id "kdstg"
-    sbml_parameter_14_meta_id "metaid_0000023"
-    sbml_parameter_14_name "kdstg"
-    sbml_parameter_14_value 0.0
-  ]
-  sbml_parameter_15 [
-    sbml_parameter_15_id "kastgp"
-    sbml_parameter_15_meta_id "metaid_0000024"
-    sbml_parameter_15_name "kastgp"
-    sbml_parameter_15_value 0.0
-  ]
-  sbml_parameter_16 [
-    sbml_parameter_16_id "kastg"
-    sbml_parameter_16_meta_id "metaid_0000025"
-    sbml_parameter_16_name "kastgpp"
-    sbml_parameter_16_value 1.0
-  ]
-  sbml_parameter_17 [
-    sbml_parameter_17_id "kistg"
-    sbml_parameter_17_meta_id "metaid_0000026"
-    sbml_parameter_17_name "kistg"
-    sbml_parameter_17_value 0.3
-  ]
-  sbml_parameter_18 [
-    sbml_parameter_18_id "kawee"
-    sbml_parameter_18_meta_id "metaid_0000027"
-    sbml_parameter_18_name "kawee"
-    sbml_parameter_18_value 0.3
-  ]
-  sbml_parameter_19 [
-    sbml_parameter_19_id "kiweep"
-    sbml_parameter_19_meta_id "metaid_0000028"
-    sbml_parameter_19_name "kiweep"
-    sbml_parameter_19_value 0.01
-  ]
-  sbml_parameter_2 [
-    sbml_parameter_2_id "kdc"
-    sbml_parameter_2_meta_id "metaid_0000011"
-    sbml_parameter_2_name "kdcp"
-    sbml_parameter_2_value 0.01
-  ]
-  sbml_parameter_20 [
-    sbml_parameter_20_id "kiwee"
-    sbml_parameter_20_meta_id "metaid_0000029"
-    sbml_parameter_20_name "kiweepp"
-    sbml_parameter_20_value 1.0
-  ]
-  sbml_parameter_21 [
-    sbml_parameter_21_id "kt"
-    sbml_parameter_21_meta_id "metaid_0000030"
-    sbml_parameter_21_name "kin"
-    sbml_parameter_21_value 0.15
-  ]
-  sbml_parameter_22 [
-    sbml_parameter_22_id "Jaie"
-    sbml_parameter_22_meta_id "metaid_0000031"
-    sbml_parameter_22_name "Jaie"
-    sbml_parameter_22_value 0.01
-  ]
-  sbml_parameter_23 [
-    sbml_parameter_23_id "Jiie"
-    sbml_parameter_23_meta_id "metaid_0000032"
-    sbml_parameter_23_name "Jiie"
-    sbml_parameter_23_value 0.01
-  ]
-  sbml_parameter_24 [
-    sbml_parameter_24_id "Jafzy"
-    sbml_parameter_24_meta_id "metaid_0000033"
-    sbml_parameter_24_name "Jafzy"
-    sbml_parameter_24_value 0.01
-  ]
-  sbml_parameter_25 [
-    sbml_parameter_25_id "Jifzy"
-    sbml_parameter_25_meta_id "metaid_0000034"
-    sbml_parameter_25_name "Jifzy"
-    sbml_parameter_25_value 0.01
-  ]
-  sbml_parameter_26 [
-    sbml_parameter_26_id "Jastg"
-    sbml_parameter_26_meta_id "metaid_0000035"
-    sbml_parameter_26_name "Jastg"
-    sbml_parameter_26_value 0.05
-  ]
-  sbml_parameter_27 [
-    sbml_parameter_27_id "Jistg"
-    sbml_parameter_27_meta_id "metaid_0000036"
-    sbml_parameter_27_name "Jistg"
-    sbml_parameter_27_value 0.05
-  ]
-  sbml_parameter_28 [
-    sbml_parameter_28_id "Jawee"
-    sbml_parameter_28_meta_id "metaid_0000037"
-    sbml_parameter_28_name "Jawee"
-    sbml_parameter_28_value 0.05
-  ]
-  sbml_parameter_29 [
-    sbml_parameter_29_id "Jiwee"
-    sbml_parameter_29_meta_id "metaid_0000038"
-    sbml_parameter_29_name "Jiwee"
-    sbml_parameter_29_value 0.05
-  ]
-  sbml_parameter_3 [
-    sbml_parameter_3_id "kdnp"
-    sbml_parameter_3_meta_id "metaid_0000012"
-    sbml_parameter_3_name "kdnp"
-    sbml_parameter_3_value 0.01
-  ]
-  sbml_parameter_30 [
-    sbml_parameter_30_id "Jm"
-    sbml_parameter_30_meta_id "metaid_0000039"
-    sbml_parameter_30_name "Jm"
-    sbml_parameter_30_value 0.05
-  ]
-  sbml_parameter_31 [
-    sbml_parameter_31_id "kdmp"
-    sbml_parameter_31_meta_id "metaid_0000040"
-    sbml_parameter_31_name "kdmp"
-    sbml_parameter_31_value 0.002
-  ]
-  sbml_parameter_32 [
-    sbml_parameter_32_id "kdm"
-    sbml_parameter_32_meta_id "metaid_0000041"
-    sbml_parameter_32_name "kdmpp"
-    sbml_parameter_32_value 0.2
-  ]
-  sbml_parameter_33 [
-    sbml_parameter_33_id "koutw_1"
-    sbml_parameter_33_meta_id "metaid_0000043"
-    sbml_parameter_33_name "koutw"
-    sbml_parameter_33_value 0.01
-  ]
-  sbml_parameter_34 [
-    sbml_parameter_34_id "kinw_1"
-    sbml_parameter_34_meta_id "metaid_0000044"
-    sbml_parameter_34_name "kinw"
-    sbml_parameter_34_value 0.04
-  ]
-  sbml_parameter_35 [
-    sbml_parameter_35_id "kouts_1"
-    sbml_parameter_35_meta_id "metaid_0000045"
-    sbml_parameter_35_name "kouts"
-    sbml_parameter_35_value 0.02
-  ]
-  sbml_parameter_36 [
-    sbml_parameter_36_id "kins_1"
-    sbml_parameter_36_meta_id "metaid_0000046"
-    sbml_parameter_36_name "kins"
-    sbml_parameter_36_value 0.08
-  ]
-  sbml_parameter_37 [
-    sbml_parameter_37_id "kez_1"
-    sbml_parameter_37_meta_id "metaid_0000048"
-    sbml_parameter_37_name "kez"
-    sbml_parameter_37_value 0.5
-  ]
-  sbml_parameter_38 [
-    sbml_parameter_38_id "factor_1"
-    sbml_parameter_38_meta_id "metaid_0000049"
-    sbml_parameter_38_name "factor"
-    sbml_parameter_38_value 1.95
-  ]
-  sbml_parameter_39 [
-    sbml_parameter_39_id "E_1"
-    sbml_parameter_39_meta_id "metaid_0000050"
-    sbml_parameter_39_name "E"
-    sbml_parameter_39_value 7.0E-5
-  ]
-  sbml_parameter_4 [
-    sbml_parameter_4_id "kdn"
-    sbml_parameter_4_meta_id "metaid_0000013"
-    sbml_parameter_4_name "kdnpp"
-    sbml_parameter_4_value 1.5
-  ]
-  sbml_parameter_40 [
-    sbml_parameter_40_id "ksxp_1"
-    sbml_parameter_40_meta_id "metaid_0000051"
-    sbml_parameter_40_name "ksxp"
-    sbml_parameter_40_value 0.001
-  ]
-  sbml_parameter_41 [
-    sbml_parameter_41_id "ksxm_1"
-    sbml_parameter_41_meta_id "metaid_0000052"
-    sbml_parameter_41_name "ksxm"
-    sbml_parameter_41_value 5.0E-4
-  ]
-  sbml_parameter_42 [
-    sbml_parameter_42_id "kout_1"
-    sbml_parameter_42_meta_id "metaid_0000053"
-    sbml_parameter_42_name "kout"
-    sbml_parameter_42_value 0.0
-  ]
-  sbml_parameter_43 [
-    sbml_parameter_43_constant "false"
-    sbml_parameter_43_id "CycBT"
-    sbml_parameter_43_meta_id "metaid_0000142"
-  ]
-  sbml_parameter_44 [
-    sbml_parameter_44_id "StringT"
-    sbml_parameter_44_meta_id "metaid_0000143"
-    sbml_parameter_44_value 0.8
-  ]
-  sbml_parameter_45 [
-    sbml_parameter_45_id "Wee1T"
-    sbml_parameter_45_meta_id "metaid_0000144"
-    sbml_parameter_45_value 0.8
-  ]
-  sbml_parameter_46 [
-    sbml_parameter_46_constant "false"
-    sbml_parameter_46_id "StgPT"
-    sbml_parameter_46_meta_id "metaid_0000145"
-    sbml_parameter_46_value 0.0
-  ]
-  sbml_parameter_5 [
-    sbml_parameter_5_id "kaie"
-    sbml_parameter_5_meta_id "metaid_0000014"
-    sbml_parameter_5_name "kaie"
-    sbml_parameter_5_value 1.0
-  ]
-  sbml_parameter_6 [
-    sbml_parameter_6_id "kiie"
-    sbml_parameter_6_meta_id "metaid_0000015"
-    sbml_parameter_6_name "kiie"
-    sbml_parameter_6_value 0.4
-  ]
-  sbml_parameter_7 [
-    sbml_parameter_7_id "kafzy"
-    sbml_parameter_7_meta_id "metaid_0000016"
-    sbml_parameter_7_name "kafzy"
-    sbml_parameter_7_value 1.0
-  ]
-  sbml_parameter_8 [
-    sbml_parameter_8_id "kifzy"
-    sbml_parameter_8_meta_id "metaid_0000017"
-    sbml_parameter_8_name "kifzy"
-    sbml_parameter_8_value 0.2
-  ]
-  sbml_parameter_9 [
-    sbml_parameter_9_id "kweep"
-    sbml_parameter_9_meta_id "metaid_0000018"
-    sbml_parameter_9_name "kweep"
-    sbml_parameter_9_value 0.005
-  ]
-  sbml_unit_definition_1 [
-    sbml_unit_definition_1_id "time_1"
-    sbml_unit_definition_1_meta_id "metaid_0000008"
-    sbml_unit_definition_1_name "min"
-    sbml_unit_definition_1_sub_unit_1_ "(60.0 * 10^0 * second)^1.0"
-    sbml_unit_definition_1_sub_unit_1_meta_id "_294219"
-    sbml_unit_definition_1unit "(60.0 * 10^0 * second)^1.0"
   ]
   directed 1
   node [
     id 1
-    zlevel -1
+    zlevel -116
 
-    cluster [
-      cluster "cytoplasm"
+    SBGN [
+      ID "glyph1"
     ]
     graphics [
-      x 236.66666666666669
-      y 840.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ 29.63794274455986
-    ]
-    label "MPFc"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "MPFc"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "cytoplasm"
-      initial_concentration 1.0
-      sbmlRole "species"
-      species_id "MPFc"
-      species_meta_id "metaid_0000055"
-    ]
-  ]
-  node [
-    id 2
-    zlevel -1
-
-    cluster [
-      cluster "cytoplasm"
-    ]
-    graphics [
-      x 387.5
-      y 1130.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ -202.3939677700816
-    ]
-    label "preMPFc"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "preMPFc"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "cytoplasm"
-      initial_concentration 0.0
-      sbmlRole "species"
-      species_id "preMPFc"
-      species_meta_id "metaid_0000056"
-    ]
-  ]
-  node [
-    id 3
-    zlevel -1
-
-    cluster [
-      cluster "cytoplasm"
-    ]
-    graphics [
-      x 701.6666666666666
-      y 1440.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ -157.53198652146483
-    ]
-    label "StgPc"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "StgPc"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "cytoplasm"
-      initial_concentration 0.8
-      sbmlRole "species"
-      species_id "StgPc"
-      species_meta_id "metaid_0000057"
-    ]
-  ]
-  node [
-    id 4
-    zlevel -1
-
-    cluster [
-      cluster "cytoplasm"
-    ]
-    graphics [
-      x 387.5
-      y 310.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ -33.19014251860466
-    ]
-    label "Wee1c"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "Wee1c"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "cytoplasm"
-      initial_concentration 0.0
-      sbmlRole "species"
-      species_id "Wee1c"
-      species_meta_id "metaid_0000058"
-    ]
-  ]
-  node [
-    id 5
-    zlevel -1
-
-    cluster [
-      cluster "cytoplasm"
-    ]
-    graphics [
-      x 701.6666666666666
-      y 310.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ 105.933346275102
-    ]
-    label "Wee1Pc"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "Wee1Pc"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "true"
-      compartment "cytoplasm"
-      initial_concentration 0.8
-      sbmlRole "species"
-      species_id "Wee1Pc"
-      species_meta_id "metaid_0000059"
-    ]
-  ]
-  node [
-    id 6
-    zlevel -1
-
-    cluster [
-      cluster "cytoplasm"
-    ]
-    graphics [
-      x 1200.0
-      y 1410.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ -38.688131144693465
-    ]
-    label "Stgm"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "Stgm"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "cytoplasm"
-      initial_concentration 1.0
-      sbmlRole "species"
-      species_id "Stgm"
-      species_meta_id "metaid_0000060"
-    ]
-  ]
-  node [
-    id 7
-    zlevel -1
-
-    cluster [
-      cluster "cytoplasm"
-    ]
-    graphics [
-      x 1201.25
-      y 1190.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ -87.05774256453667
-    ]
-    label "Xp"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "Xp"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "cytoplasm"
-      initial_concentration 0.0
-      sbmlRole "species"
-      species_id "Xp"
-      species_meta_id "metaid_0000061"
-    ]
-  ]
-  node [
-    id 8
-    zlevel -1
-
-    cluster [
-      cluster "cytoplasm"
-    ]
-    graphics [
-      x 1201.25
-      y 1670.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ -12.51563926055654
-    ]
-    label "Stgc"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "Stgc"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "cytoplasm"
-      initial_concentration 0.0
-      sbmlRole "species"
-      species_id "Stgc"
-      species_meta_id "metaid_0000062"
-    ]
-  ]
-  node [
-    id 9
-    zlevel -1
-
-    cluster [
-      cluster "cytoplasm"
-    ]
-    graphics [
-      x 1200.0
-      y 1010.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ -82.2026480699504
-    ]
-    label "Xm"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "Xm"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "cytoplasm"
-      initial_concentration 0.0
-      sbmlRole "species"
-      species_id "Xm"
-      species_meta_id "metaid_0000063"
-    ]
-  ]
-  node [
-    id 10
-    zlevel -1
-
-    cluster [
-      cluster "nuclei"
-    ]
-    graphics [
-      x 1170.0
-      y 460.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ 89.09462249406351
-    ]
-    label "MPFn"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "MPFn"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "nuclei"
-      initial_concentration 0.0
-      sbmlRole "species"
-      species_id "MPFn"
-      species_meta_id "metaid_0000064"
-    ]
-  ]
-  node [
-    id 11
-    zlevel -1
-
-    cluster [
-      cluster "nuclei"
-    ]
-    graphics [
-      x 1280.0
-      y 750.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ -105.77445626449577
-    ]
-    label "preMPFn"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "preMPFn"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "nuclei"
-      initial_concentration 0.0
-      sbmlRole "species"
-      species_id "preMPFn"
-      species_meta_id "metaid_0000065"
-    ]
-  ]
-  node [
-    id 12
-    zlevel -1
-
-    cluster [
-      cluster "nuclei"
-    ]
-    graphics [
-      x 1000.0
-      y 320.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ 198.56315529024684
-    ]
-    label "Wee1Pn"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "Wee1Pn"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "nuclei"
-      initial_concentration 0.0
-      sbmlRole "species"
-      species_id "Wee1Pn"
-      species_meta_id "metaid_0000066"
-    ]
-  ]
-  node [
-    id 13
-    zlevel -1
-
-    cluster [
-      cluster "nuclei"
-    ]
-    graphics [
-      x 1060.0
-      y 160.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ 53.049633803342154
-    ]
-    label "Wee1n"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "Wee1n"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "nuclei"
-      initial_concentration 0.0
-      sbmlRole "species"
-      species_id "Wee1n"
-      species_meta_id "metaid_0000067"
-    ]
-  ]
-  node [
-    id 14
-    zlevel -1
-
-    cluster [
-      cluster "nuclei"
-    ]
-    graphics [
-      x 1980.0
-      y 710.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ -64.49024808839293
-    ]
-    label "StgPn"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "StgPn"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "nuclei"
-      initial_concentration 0.0
-      sbmlRole "species"
-      species_id "StgPn"
-      species_meta_id "metaid_0000068"
-    ]
-  ]
-  node [
-    id 15
-    zlevel -1
-
-    cluster [
-      cluster "nuclei"
-    ]
-    graphics [
-      x 1520.0
-      y 770.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ 82.94740557037673
-    ]
-    label "Stgn"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "Stgn"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "nuclei"
-      initial_concentration 0.0
-      sbmlRole "species"
-      species_id "Stgn"
-      species_meta_id "metaid_0000069"
-    ]
-  ]
-  node [
-    id 16
-    zlevel -1
-
-    cluster [
-      cluster "nuclei"
-    ]
-    graphics [
-      x 1610.0
-      y 410.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ 11.94038636433959
-    ]
-    label "FZYa"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "FZYa"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "nuclei"
-      initial_concentration 0.0
-      sbmlRole "species"
-      species_id "FZYa"
-      species_meta_id "metaid_0000070"
-    ]
-  ]
-  node [
-    id 17
-    zlevel -1
-
-    cluster [
-      cluster "nuclei"
-    ]
-    graphics [
-      x 1440.0
-      y 300.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ 214.54715439624238
-    ]
-    label "IEa_1"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "IEa_1"
-      type "text"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "nuclei"
-      initial_concentration 0.0
-      sbmlRole "species"
-      species_id "IEa_1"
-      species_meta_id "metaid_0000072"
-    ]
-  ]
-  node [
-    id 18
-    zlevel -1
-
-    cluster [
-      cluster "nuclei"
-    ]
-    graphics [
-      x 930.0
-      y 700.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "oval"
-      z_ -37.929028055020005
-    ]
-    label "N"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "N"
-      type "text"
-    ]
-  ]
-  node [
-    id 19
-    zlevel -1
-
-    graphics [
-      x 236.66666666666669
-      y 620.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 160.3323647878808
-    ]
-    label "Synthesis of MPFc"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_1"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_1"
-      reaction_meta_id "metaid_0000085"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "ksc*cytoplasm"
-      kinetic_law_meta_id "_294243"
-    ]
-  ]
-  node [
-    id 20
-    zlevel -1
-
-    graphics [
-      x 387.5
-      y 1250.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -126.68840772735383
-    ]
-    label "Activation of MPFc"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_2"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_2"
-      reaction_meta_id "metaid_0000086"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*(kstgp+kstg*StgPc)*preMPFc"
-      kinetic_law_meta_id "_294291"
-    ]
-  ]
-  node [
-    id 21
-    zlevel -1
-
-    graphics [
-      x 387.5
-      y 940.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -81.94239275405987
-    ]
-    label "Inactivation of MPFc"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_3"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_3"
-      reaction_meta_id "metaid_0000087"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*(kweep+kwee*Wee1c)*MPFc"
-      kinetic_law_meta_id "_294339"
-    ]
-  ]
-  node [
-    id 22
-    zlevel -1
-
-    graphics [
-      x 500.0
-      y 1190.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -329.6959808438372
-    ]
-    label "Degradation of cyclin"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_6"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_6"
-      reaction_meta_id "metaid_0000088"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kdc*preMPFc"
-      kinetic_law_meta_id "_294363"
-    ]
-  ]
-  node [
-    id 23
-    zlevel -1
-
-    graphics [
-      x 150.0
-      y 770.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 150.81673387876907
-    ]
-    label "degradation of cyclin"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_7"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_7"
-      reaction_meta_id "metaid_0000089"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kdc*MPFc"
-      kinetic_law_meta_id "_294387"
-    ]
-  ]
-  node [
-    id 24
-    zlevel -1
-
-    graphics [
-      x 470.0
-      y 560.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 37.266115586449175
-    ]
-    label "Inactivation of Wee1c"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_8"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_8"
-      reaction_meta_id "metaid_0000090"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*(kiweep+kiwee*MPFc)*Wee1c/(Jiwee+Wee1c)"
-      kinetic_law_meta_id "_294435"
-    ]
-  ]
-  node [
-    id 25
-    zlevel -1
-
-    graphics [
-      x 550.0
-      y 350.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 24.91181775770224
-    ]
-    label "Activation of Wee1c"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_9"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_9"
-      reaction_meta_id "metaid_0000091"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kawee*Wee1Pc/(Jawee+Wee1Pc)"
-      kinetic_law_meta_id "_294485"
-    ]
-  ]
-  node [
-    id 26
-    zlevel -1
-
-    graphics [
-      x 1201.25
-      y 1320.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -62.25022166901892
-    ]
-    label "mRNA of Stg"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_10"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_10"
-      reaction_meta_id "metaid_0000092"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*(kdmp*Stgm/(Jm+Stgm)+kdm*Xp*Stgm)"
-      kinetic_law_meta_id "_294522"
-    ]
-  ]
-  node [
-    id 27
-    zlevel -1
-
-    graphics [
-      x 1201.25
-      y 1510.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -23.63545025446864
-    ]
-    label "Synthesis of Stg"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_12"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_12"
-      reaction_meta_id "metaid_0000093"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*ksstg*Stgm"
-      kinetic_law_meta_id "_294558"
-    ]
-  ]
-  node [
-    id 28
-    zlevel -1
-
-    graphics [
-      x 236.66666666666669
-      y 1550.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -42.12922571420663
-    ]
-    label "activation of Stgc"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_13"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_13"
-      reaction_meta_id "metaid_0000094"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*(kastgp+kastg*MPFc)*Stgc/(Jastg+Stgc)"
-      kinetic_law_meta_id "_294606"
-    ]
-  ]
-  node [
-    id 29
-    zlevel -1
-
-    graphics [
-      x 930.0
-      y 1550.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -131.72721598234827
-    ]
-    label "inactivation of Stgc"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_14"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_14"
-      reaction_meta_id "metaid_0000095"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kistg*StgPc/(Jistg+StgPc)"
-      kinetic_law_meta_id "_294642"
-    ]
-  ]
-  node [
-    id 30
-    zlevel -1
-
-    graphics [
-      x 1390.0
-      y 1670.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 8.247442012326546
-    ]
-    label "degradation of Stgc"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_15"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_15"
-      reaction_meta_id "metaid_0000096"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kdstg*Stgc"
-      kinetic_law_meta_id "_294666"
-    ]
-  ]
-  node [
-    id 31
-    zlevel -1
-
-    graphics [
-      x 701.6666666666666
-      y 1550.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -274.85696750760826
-    ]
-    label "degradation of active Stgc"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_16"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_16"
-      reaction_meta_id "metaid_0000097"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kdstg*StgPc"
-      kinetic_law_meta_id "_294690"
-    ]
-  ]
-  node [
-    id 32
-    zlevel -1
-
-    graphics [
-      x 701.6666666666666
-      y 790.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 46.61841269056726
-    ]
-    label "export of MPF from cytoplasm"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_19"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_19"
-      reaction_meta_id "metaid_0000098"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kt*MPFc*E_1*N/(1-N*E_1)"
-      kinetic_law_meta_id "_294726"
-    ]
-  ]
-  node [
-    id 33
-    zlevel -1
-
-    graphics [
-      x 701.6666666666666
-      y 730.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 29.23727885880077
-    ]
-    label "import of MPF into cytoplasm"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "importofMPFintocytoplasm_1"
-      type "text"
-    ]
-    sbml [
-      reaction_id "importofMPFintocytoplasm_1"
-      reaction_meta_id "metaid_0000099"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kout_1*MPFn*E_1*N/(1-N*E_1)"
-      kinetic_law_meta_id "_294774"
-    ]
-  ]
-  node [
-    id 34
-    zlevel -1
-
-    graphics [
-      x 701.6666666666666
-      y 640.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 110.64732961672355
-    ]
-    label "import of MPF into nucleus"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "_16"
-      type "text"
-    ]
-    sbml [
-      reaction_id "_16"
-      reaction_meta_id "metaid_0000100"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kt*MPFc"
-      kinetic_law_meta_id "_294810"
-    ]
-  ]
-  node [
-    id 35
-    zlevel -1
-
-    graphics [
-      x 1230.0
-      y 590.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 210.29004257021427
-    ]
-    label "export of MPF from nucleus"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "exportofMPFfromnucleus_1"
-      type "text"
-    ]
-    sbml [
-      reaction_id "exportofMPFfromnucleus_1"
-      reaction_meta_id "metaid_0000101"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kout_1*MPFn"
-      kinetic_law_meta_id "_294836"
-    ]
-  ]
-  node [
-    id 36
-    zlevel -1
-
-    graphics [
-      x 920.0
-      y 1130.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -102.8668997100788
-    ]
-    label "import of preMPF into cytoplasm"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "importofpreMPFintocytoplaslm_1"
-      type "text"
-    ]
-    sbml [
-      reaction_id "importofpreMPFintocytoplaslm_1"
-      reaction_meta_id "metaid_0000102"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kout_1*preMPFn*N*E_1/(1-N*E_1)"
-      kinetic_law_meta_id "_294885"
-    ]
-  ]
-  node [
-    id 37
-    zlevel -1
-
-    graphics [
-      x 701.6666666666666
-      y 900.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -177.4939844135988
-    ]
-    label "export of preMPF from cytoplasm"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_20"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_20"
-      reaction_meta_id "metaid_0000103"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kt*preMPFc*E_1*N/(1-N*E_1)"
-      kinetic_law_meta_id "_294922"
-    ]
-  ]
-  node [
-    id 38
-    zlevel -1
-
-    graphics [
-      x 850.0
-      y 1010.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -212.73912472229134
-    ]
-    label "import of preMPF into nucleus"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "_18"
-      type "text"
-    ]
-    sbml [
-      reaction_id "_18"
-      reaction_meta_id "metaid_0000104"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kt*preMPFc"
-      kinetic_law_meta_id "_294959"
-    ]
-  ]
-  node [
-    id 39
-    zlevel -1
-
-    graphics [
-      x 1110.0
-      y 700.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -201.30589157083853
-    ]
-    label "export of preMPFn from nucleus"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "exportofpreMPFnfromnucleus_1"
-      type "text"
-    ]
-    sbml [
-      reaction_id "exportofpreMPFnfromnucleus_1"
-      reaction_meta_id "metaid_0000105"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kout_1*preMPFn"
-      kinetic_law_meta_id "_294985"
-    ]
-  ]
-  node [
-    id 40
-    zlevel -1
-
-    graphics [
-      x 900.0
-      y 270.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 313.8117302501434
-    ]
-    label "export of Wee1P from nucleus"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_21"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_21"
-      reaction_meta_id "metaid_0000106"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*koutw_1*Wee1Pn"
-      kinetic_law_meta_id "_295011"
-    ]
-  ]
-  node [
-    id 41
-    zlevel -1
-
-    graphics [
-      x 940.0
-      y 470.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 106.76275978843275
-    ]
-    label "import of  Wee1P into cytoplasm"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "_182_1"
-      type "text"
-    ]
-    sbml [
-      reaction_id "_182_1"
-      reaction_meta_id "metaid_0000107"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*koutw_1*Wee1Pn*N*E_1/(1-N*E_1)"
-      kinetic_law_meta_id "_295062"
-    ]
-  ]
-  node [
-    id 42
-    zlevel -1
-
-    graphics [
-      x 701.6666666666666
-      y 460.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 33.959450831042496
-    ]
-    label "export of Wee1P from cytoplasm"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_22"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_22"
-      reaction_meta_id "metaid_0000108"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kinw_1*Wee1Pc*E_1*N/(1-N*E_1)"
-      kinetic_law_meta_id "_295100"
-    ]
-  ]
-  node [
-    id 43
-    zlevel -1
-
-    graphics [
-      x 890.0
-      y 360.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 208.52345558992812
-    ]
-    label "import of Wee1P into nucleus"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "_20"
-      type "text"
-    ]
-    sbml [
-      reaction_id "_20"
-      reaction_meta_id "metaid_0000109"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kinw_1*Wee1Pc"
-      kinetic_law_meta_id "_295139"
-    ]
-  ]
-  node [
-    id 44
-    zlevel -1
-
-    graphics [
-      x 1240.0
-      y 170.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 51.543151413341604
-    ]
-    label "export of Wee1 from nucleus"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_23"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_23"
-      reaction_meta_id "metaid_0000110"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*koutw_1*Wee1n"
-      kinetic_law_meta_id "_295165"
-    ]
-  ]
-  node [
-    id 45
-    zlevel -1
-
-    graphics [
-      x 701.6666666666666
-      y 210.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -2.2292589622330836
-    ]
-    label "import of Wee1 into cytoplasm"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "_22"
-      type "text"
-    ]
-    sbml [
-      reaction_id "_22"
-      reaction_meta_id "metaid_0000111"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*koutw_1*Wee1n*N*E_1/(1-N*E_1)"
-      kinetic_law_meta_id "_295215"
-    ]
-  ]
-  node [
-    id 46
-    zlevel -1
-
-    graphics [
-      x 701.6666666666666
-      y 560.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -82.70165639262514
-    ]
-    label "export of Wee1c from cytoplasm"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_24"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_24"
-      reaction_meta_id "metaid_0000112"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kinw_1*Wee1c*E_1*N/(1-N*E_1)"
-      kinetic_law_meta_id "_295251"
-    ]
-  ]
-  node [
-    id 47
-    zlevel -1
-
-    graphics [
-      x 701.6666666666666
-      y 130.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -8.29825032431889
-    ]
-    label "import of Wee1 into nucleus"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "_24"
-      type "text"
-    ]
-    sbml [
-      reaction_id "_24"
-      reaction_meta_id "metaid_0000113"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kinw_1*Wee1c"
-      kinetic_law_meta_id "_295287"
-    ]
-  ]
-  node [
-    id 48
-    zlevel -1
-
-    graphics [
-      x 1960.0
-      y 570.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -157.664129143524
-    ]
-    label "export of StgP from nucleus"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_25"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_25"
-      reaction_meta_id "metaid_0000114"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kouts_1*StgPn"
-      kinetic_law_meta_id "_295311"
-    ]
-  ]
-  node [
-    id 49
-    zlevel -1
-
-    graphics [
-      x 980.0
-      y 1260.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -79.03367686842743
-    ]
-    label "import of StgP into cytoplasm"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "_26"
-      type "text"
-    ]
-    sbml [
-      reaction_id "_26"
-      reaction_meta_id "metaid_0000115"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kouts_1*StgPn*E_1*N/(1-N*E_1)"
-      kinetic_law_meta_id "_295359"
-    ]
-  ]
-  node [
-    id 50
-    zlevel -1
-
-    graphics [
-      x 701.6666666666666
-      y 1210.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -149.72491163044555
-    ]
-    label "export of StgP from cytoplasm"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_26"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_26"
-      reaction_meta_id "metaid_0000116"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kins_1*StgPc*E_1*N/(1-N*E_1)"
-      kinetic_law_meta_id "_295395"
-    ]
-  ]
-  node [
-    id 51
-    zlevel -1
-
-    graphics [
-      x 1990.0
-      y 920.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -157.46437922232386
-    ]
-    label "import of StgP into nucleus"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "_28"
-      type "text"
-    ]
-    sbml [
-      reaction_id "_28"
-      reaction_meta_id "metaid_0000117"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kins_1*StgPc"
-      kinetic_law_meta_id "_295431"
-    ]
-  ]
-  node [
-    id 52
-    zlevel -1
-
-    graphics [
-      x 1490.0
-      y 710.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 107.38989320139315
-    ]
-    label "export of Stg from nucleus"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_27"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_27"
-      reaction_meta_id "metaid_0000118"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kouts_1*Stgn"
-      kinetic_law_meta_id "_295456"
-    ]
-  ]
-  node [
-    id 53
-    zlevel -1
-
-    graphics [
-      x 1470.0
-      y 930.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 29.28420674557431
-    ]
-    label "import of Stg into cytoplasm"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "_30"
-      type "text"
-    ]
-    sbml [
-      reaction_id "_30"
-      reaction_meta_id "metaid_0000119"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kouts_1*Stgn*E_1*N/(1-N*E_1)"
-      kinetic_law_meta_id "_295504"
-    ]
-  ]
-  node [
-    id 54
-    zlevel -1
-
-    graphics [
-      x 1070.0
-      y 1550.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -21.61169923215161
-    ]
-    label "export of Stg from cytoplasm"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_28"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_28"
-      reaction_meta_id "metaid_0000120"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kins_1*Stgc*E_1*N/(1-N*E_1)"
-      kinetic_law_meta_id "_295540"
-    ]
-  ]
-  node [
-    id 55
-    zlevel -1
-
-    graphics [
-      x 1650.0
-      y 810.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 58.32973633365637
-    ]
-    label "import of Stg into nucleus"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "_32"
-      type "text"
-    ]
-    sbml [
-      reaction_id "_32"
-      reaction_meta_id "metaid_0000121"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*kins_1*Stgc"
-      kinetic_law_meta_id "_295576"
-    ]
-  ]
-  node [
-    id 56
-    zlevel -1
-
-    graphics [
-      x 1380.0
-      y 630.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -36.95416150843664
-    ]
-    label "activation of MPFn"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_29"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_29"
-      reaction_meta_id "metaid_0000122"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*(kstgp+kstg*StgPn)*preMPFn"
-      kinetic_law_meta_id "_295624"
-    ]
-  ]
-  node [
-    id 57
-    zlevel -1
-
-    graphics [
-      x 1130.0
-      y 630.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 15.396586184933392
-    ]
-    label "inactivation of MPFn"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_30"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_30"
-      reaction_meta_id "metaid_0000123"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*(kweep+kwee*Wee1n)*MPFn"
-      kinetic_law_meta_id "_295672"
-    ]
-  ]
-  node [
-    id 58
-    zlevel -1
-
-    graphics [
-      x 1730.0
-      y 500.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -75.58873629984541
-    ]
-    label "degradation of preMPFn"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_33"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_33"
-      reaction_meta_id "metaid_0000124"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*(kdnp+kdn*FZYa)*preMPFn"
-      kinetic_law_meta_id "_295708"
-    ]
-  ]
-  node [
-    id 59
-    zlevel -1
-
-    graphics [
-      x 1570.0
-      y 510.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 59.530032695299056
-    ]
-    label "degradation of MPFn"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_34"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_34"
-      reaction_meta_id "metaid_0000125"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*(kdnp+kdn*FZYa)*MPFn"
-      kinetic_law_meta_id "_295744"
-    ]
-  ]
-  node [
-    id 60
-    zlevel -1
-
-    graphics [
-      x 1500.0
-      y 220.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 294.53474329287724
-    ]
-    label "activation of intermediary enzyme"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_37"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_37"
-      reaction_meta_id "metaid_0000126"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kiie*IEa_1/(Jiie+IEa_1)"
-      kinetic_law_meta_id "_295768"
-    ]
-  ]
-  node [
-    id 61
-    zlevel -1
-
-    graphics [
-      x 1380.0
-      y 370.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 169.8881260369926
-    ]
-    label "inactivation of intermediary enzyme"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_38"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_38"
-      reaction_meta_id "metaid_0000127"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kaie*(1-IEa_1)*MPFn/(Jaie+1-IEa_1)"
-      kinetic_law_meta_id "_295804"
-    ]
-  ]
-  node [
-    id 62
-    zlevel -1
-
-    graphics [
-      x 1620.0
-      y 320.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 116.01500795572244
-    ]
-    label "activation of FZY"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_39"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_39"
-      reaction_meta_id "metaid_0000128"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kafzy*IEa_1*(1-FZYa)/(Jafzy+1-FZYa)"
-      kinetic_law_meta_id "_295840"
-    ]
-  ]
-  node [
-    id 63
-    zlevel -1
-
-    graphics [
-      x 1750.0
-      y 310.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -24.72831463760895
-    ]
-    label "inactivation of FZY"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_40"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_40"
-      reaction_meta_id "metaid_0000129"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kifzy*FZYa/(Jifzy+FZYa)"
-      kinetic_law_meta_id "_295864"
-    ]
-  ]
-  node [
-    id 64
-    zlevel -1
-
-    graphics [
-      x 1290.0
-      y 330.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 143.99518227831155
-    ]
-    label "inactivation of Wee1n"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_41"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_41"
-      reaction_meta_id "metaid_0000130"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*(kiweep+kiwee*MPFn)*Wee1n/(Jiwee+Wee1n)"
-      kinetic_law_meta_id "_295912"
-    ]
-  ]
-  node [
-    id 65
-    zlevel -1
-
-    graphics [
-      x 1010.0
-      y 220.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 162.7864225290994
-    ]
-    label "activation of Wee1n"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_42"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_42"
-      reaction_meta_id "metaid_0000131"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kawee*Wee1Pn/(Jawee+Wee1Pn)"
-      kinetic_law_meta_id "_295948"
-    ]
-  ]
-  node [
-    id 66
-    zlevel -1
-
-    graphics [
-      x 1690.0
-      y 590.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 65.56473395586322
-    ]
-    label "activation of StgPn"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_43"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_43"
-      reaction_meta_id "metaid_0000132"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*(kastgp+kastg*MPFn)*Stgn/(Jastg+Stgn)"
-      kinetic_law_meta_id "_295996"
-    ]
-  ]
-  node [
-    id 67
-    zlevel -1
-
-    graphics [
-      x 1740.0
-      y 730.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 10.362696294213352
-    ]
-    label "inactivation of StgPn"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_44"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_44"
-      reaction_meta_id "metaid_0000133"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kistg*StgPn/(Jistg+StgPn)"
-      kinetic_law_meta_id "_296032"
-    ]
-  ]
-  node [
-    id 68
-    zlevel -1
-
-    graphics [
-      x 1420.0
-      y 800.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ 195.33735489012722
-    ]
-    label "degradation of Stgn"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_45"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_45"
-      reaction_meta_id "metaid_0000134"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kdstg*Stgn"
-      kinetic_law_meta_id "_296056"
-    ]
-  ]
-  node [
-    id 69
-    zlevel -1
-
-    graphics [
-      x 1820.0
-      y 580.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -61.95586820460541
-    ]
-    label "degradation of StgPn"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "R_46"
-      type "text"
-    ]
-    sbml [
-      reaction_id "R_46"
-      reaction_meta_id "metaid_0000135"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*kdstg*StgPn"
-      kinetic_law_meta_id "_296081"
-    ]
-  ]
-  node [
-    id 70
-    zlevel -1
-
-    graphics [
-      x 990.0
-      y 670.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -123.56346823927937
-    ]
-    label "Nuclei"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "Nuclei_1"
-      type "text"
-    ]
-    sbml [
-      reaction_id "Nuclei_1"
-      reaction_meta_id "metaid_0000136"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "0"
-      kinetic_law_meta_id "_296105"
-    ]
-  ]
-  node [
-    id 71
-    zlevel -1
-
-    graphics [
-      x 1200.0
-      y 940.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -63.02524915636005
-    ]
-    label "Zygotic mRNA"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "_50"
-      type "text"
-    ]
-    sbml [
-      reaction_id "_50"
-      reaction_meta_id "metaid_0000137"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "nuclei*ksxm_1*N"
-      kinetic_law_meta_id "_296141"
-    ]
-  ]
-  node [
-    id 72
-    zlevel -1
-
-    graphics [
-      x 1200.0
-      y 1090.0
-      w 20.0
-      h 20.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      type "rectangle"
-      z_ -92.22498365371348
-    ]
-    label "Zygotic proteins"
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "_51"
-      type "text"
-    ]
-    sbml [
-      reaction_id "_51"
-      reaction_meta_id "metaid_0000138"
-      reaction_non_rdf_annotation "<jigcell:ratelaw jigcell:name=\\\"Local\\\"></jigcell:ratelaw>
-                                                                    "
-      reversible "false"
-      sbmlRole "reaction"
-    ]
-    sbml_kinetic_law [
-      kinetic_law_function "cytoplasm*ksxp_1*Xm"
-      kinetic_law_meta_id "_296177"
-    ]
-  ]
-  node [
-    id 73
-    zlevel -2
-
-    cluster [
-      cluster "nuclei"
-    ]
-    graphics [
-      x 1440.0
-      y 480.0
-      w 1210.0
-      h 740.0
+      x 1575.0
+      y 1195.0
+      w 3050.0
+      h 2290.0
       fill "#FFFFFF"
       outline "#000000"
       frameThickness 8.0
       gradient 0.0
-      rounding 60.0
-      type "rectangle"
-      z_ -37.929028055020005
-    ]
-    label "nuclei"
-    labelgraphics [
-      alignment "center"
-      anchor "t"
-      color "#000000"
-      fontName "Arial"
-      fontSize 14
-      fontStyle "plain"
-      type "text"
-    ]
-    labelgraphics100 [
-      alignment "center"
-      anchor "hidden"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        localAlign 0.0
-        relHor 0.0
-        relVert 0.0
-      ]
-      text "N"
-      type "text"
-    ]
-    sbgn [
-      role "COMPARTMENT"
-    ]
-    sbml [
-      boundary_condition "false"
-      compartment "nuclei"
-      initial_concentration 1.0
-      sbmlRole "species"
-      species_id "N"
-      species_meta_id "metaid_0000074"
-    ]
-  ]
-  node [
-    id 74
-    zlevel -3
-
-    graphics [
-      x 1090.0
-      y 890.0
-      w 2070.0
-      h 1640.0
-      fill "#FFFFFF"
-      outline "#000000"
-      frameThickness 8.0
-      gradient 0.0
+      opacity 1.0
       rounding 60.0
       type "rectangle"
     ]
@@ -4377,3207 +33,6971 @@ graph [
       fontName "Arial"
       fontSize 14
       fontStyle "plain"
+      labelOffset [
+        x 0.0
+        y 0.0
+      ]
       type "text"
     ]
     sbgn [
       role "COMPARTMENT"
     ]
   ]
-  edge [
-    id 1
-    source 19
-    target 1
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_294231"
-      sbmlRole "product"
-      species "MPFc"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
+  node [
     id 2
-    source 2
-    target 20
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
+    zlevel -115
+
+    SBGN [
+      ID "glyph2"
     ]
-    label ""
+    graphics [
+      x 2346.59435616257
+      y 1190.0
+      w 1470.0
+      h 2220.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 8.0
+      gradient 0.0
+      opacity 1.0
+      rounding 60.0
+      type "rectangle"
+    ]
+    label "nuclei"
     labelgraphics [
       alignment "center"
-      anchor "c"
+      anchor "t"
       color "#000000"
       fontName "Arial"
-      fontSize 12
+      fontSize 14
       fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
+      labelOffset [
+        x 0.0
+        y 0.0
       ]
       type "text"
     ]
-    sbml [
-      reactant_meta_id "_294255"
-      sbmlRole "reactant"
-      species "preMPFc"
-      stoichiometry "1.0"
+    sbgn [
+      role "COMPARTMENT"
     ]
   ]
-  edge [
+  node [
     id 3
-    source 20
-    target 1
+    zlevel -1
+
+    SBGN [
+      ID "glyph109"
+    ]
     graphics [
-      fill "#000000"
+      x 680.9022506310084
+      y 1040.9045980319513
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
       outline "#000000"
-      arrow "last"
-      frameThickness 1.0
+      frameThickness 2.0
       gradient 0.0
-      rounding 5.0
-      thickness 1.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_294267"
-      sbmlRole "product"
-      species "MPFc"
-      stoichiometry "1.0"
+    sbgn [
+      role "PROCESS"
     ]
   ]
-  edge [
+  node [
     id 4
-    source 3
-    target 20
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph81"
     ]
-    sbml [
-      modifier_meta_id "_294279"
-      sbmlRole "modifier"
-      species "StgPc"
+    graphics [
+      x 1209.5904157625719
+      y 900.3971360182195
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
     ]
   ]
-  edge [
+  node [
     id 5
-    source 1
-    target 21
+    zlevel -1
+
+    SBGN [
+      ID "glyph94"
+    ]
     graphics [
-      fill "#000000"
+      x 760.4939769594748
+      y 580.9404216155924
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
       outline "#000000"
-      arrow "last"
-      frameThickness 1.0
+      frameThickness 2.0
       gradient 0.0
-      rounding 5.0
-      thickness 1.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_294303"
-      sbmlRole "reactant"
-      species "MPFc"
-      stoichiometry "1.0"
+    sbgn [
+      role "PROCESS"
     ]
   ]
-  edge [
+  node [
     id 6
-    source 21
-    target 2
+    zlevel -1
+
+    SBGN [
+      ID "glyph67"
+    ]
     graphics [
-      fill "#000000"
+      x 1020.6280739217891
+      y 544.2895662948156
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
       outline "#000000"
-      arrow "last"
-      frameThickness 1.0
+      frameThickness 2.0
       gradient 0.0
-      rounding 5.0
-      thickness 1.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_294315"
-      sbmlRole "product"
-      species "preMPFc"
-      stoichiometry "1.0"
+    sbgn [
+      role "PROCESS"
     ]
   ]
-  edge [
+  node [
     id 7
-    source 4
-    target 21
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph7"
     ]
-    sbml [
-      modifier_meta_id "_294327"
-      sbmlRole "modifier"
-      species "Wee1c"
+    graphics [
+      x 586.2385062470676
+      y 1569.8508124656373
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "Stgm"
+    labelgraphics [
+      alignment "center"
+      anchor "c"
+      color "#000000"
+      fontName "Arial"
+      fontSize 14
+      fontStyle "plain"
+      labelOffset [
+        x 0.0
+        y 0.0
+      ]
+      type "text"
+    ]
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
     id 8
-    source 2
-    target 22
+    zlevel -1
+
+    SBGN [
+      ID "glyph68"
+    ]
     graphics [
-      fill "#000000"
+      x 583.706636994566
+      y 1184.4357958826545
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
       outline "#000000"
-      arrow "last"
-      frameThickness 1.0
+      frameThickness 2.0
       gradient 0.0
-      rounding 5.0
-      thickness 1.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_294351"
-      sbmlRole "reactant"
-      species "preMPFc"
-      stoichiometry "1.0"
+    sbgn [
+      role "PROCESS"
     ]
   ]
-  edge [
+  node [
     id 9
-    source 1
-    target 23
+    zlevel -1
+
+    SBGN [
+      ID "glyph98"
+    ]
     graphics [
-      fill "#000000"
+      x 863.8836105321043
+      y 1497.9363128110845
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
       outline "#000000"
-      arrow "last"
-      frameThickness 1.0
+      frameThickness 2.0
       gradient 0.0
-      rounding 5.0
-      thickness 1.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_294375"
-      sbmlRole "reactant"
-      species "MPFc"
-      stoichiometry "1.0"
+    sbgn [
+      role "PROCESS"
     ]
   ]
-  edge [
+  node [
     id 10
-    source 4
-    target 24
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph16"
     ]
-    label ""
+    graphics [
+      x 705.0627250441376
+      y 893.8058215561573
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "MPFc"
     labelgraphics [
       alignment "center"
       anchor "c"
       color "#000000"
       fontName "Arial"
-      fontSize 12
+      fontSize 14
       fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
+      labelOffset [
+        x 0.0
+        y 0.0
       ]
       type "text"
     ]
-    sbml [
-      reactant_meta_id "_294399"
-      sbmlRole "reactant"
-      species "Wee1c"
-      stoichiometry "1.0"
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
     id 11
-    source 24
-    target 5
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph14"
     ]
-    label ""
+    graphics [
+      x 1392.277866649214
+      y 899.2010832425956
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "preMPFc"
     labelgraphics [
       alignment "center"
       anchor "c"
       color "#000000"
       fontName "Arial"
-      fontSize 12
+      fontSize 14
       fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
+      labelOffset [
+        x 0.0
+        y 0.0
       ]
       type "text"
     ]
-    sbml [
-      product_meta_id "_294411"
-      sbmlRole "product"
-      species "Wee1Pc"
-      stoichiometry "1.0"
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
     id 12
-    source 1
-    target 24
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph10"
     ]
-    sbml [
-      modifier_meta_id "_294423"
-      sbmlRole "modifier"
-      species "MPFc"
+    graphics [
+      x 939.2741946407859
+      y 622.6277640254289
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "Wee1Pc"
+    labelgraphics [
+      alignment "center"
+      anchor "c"
+      color "#000000"
+      fontName "Arial"
+      fontSize 14
+      fontStyle "plain"
+      labelOffset [
+        x 0.0
+        y 0.0
+      ]
+      type "text"
+    ]
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
     id 13
-    source 5
-    target 25
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph11"
     ]
-    label ""
+    graphics [
+      x 1083.652833560196
+      y 457.62776402542886
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "Wee1c"
     labelgraphics [
       alignment "center"
       anchor "c"
       color "#000000"
       fontName "Arial"
-      fontSize 12
+      fontSize 14
       fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
+      labelOffset [
+        x 0.0
+        y 0.0
       ]
       type "text"
     ]
-    sbml [
-      reactant_meta_id "_294447"
-      sbmlRole "reactant"
-      species "Wee1Pc"
-      stoichiometry "1.0"
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
     id 14
-    source 25
-    target 4
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph15"
     ]
-    label ""
+    graphics [
+      x 916.4725139663533
+      y 1436.0941665214996
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "StgPc"
     labelgraphics [
       alignment "center"
       anchor "c"
       color "#000000"
       fontName "Arial"
-      fontSize 12
+      fontSize 14
       fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
+      labelOffset [
+        x 0.0
+        y 0.0
       ]
       type "text"
     ]
-    sbml [
-      product_meta_id "_294460"
-      sbmlRole "product"
-      species "Wee1c"
-      stoichiometry "1.0"
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
     id 15
-    source 5
-    target 25
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph6"
     ]
-    sbml [
-      modifier_meta_id "_294472"
-      sbmlRole "modifier"
-      species "Wee1Pc"
+    graphics [
+      x 848.6004020385626
+      y 1577.757696960647
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "Stgc"
+    labelgraphics [
+      alignment "center"
+      anchor "c"
+      color "#000000"
+      fontName "Arial"
+      fontSize 14
+      fontStyle "plain"
+      labelOffset [
+        x 0.0
+        y 0.0
+      ]
+      type "text"
+    ]
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
     id 16
-    source 6
-    target 26
+    zlevel -1
+
+    SBGN [
+      ID "glyph91"
+    ]
     graphics [
-      fill "#000000"
+      x 2548.164979872983
+      y 1253.1416996639437
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
       outline "#000000"
-      arrow "last"
-      frameThickness 1.0
+      frameThickness 2.0
       gradient 0.0
-      rounding 5.0
-      thickness 1.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_294498"
-      sbmlRole "reactant"
-      species "Stgm"
-      stoichiometry "1.0"
+    sbgn [
+      role "PROCESS"
     ]
   ]
-  edge [
+  node [
     id 17
-    source 7
-    target 26
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph88"
     ]
-    sbml [
-      modifier_meta_id "_294510"
-      sbmlRole "modifier"
-      species "Xp"
+    graphics [
+      x 2393.548721830637
+      y 891.9455362885205
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
     ]
   ]
-  edge [
+  node [
     id 18
-    source 27
-    target 8
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph4"
     ]
-    label ""
+    graphics [
+      x 2351.5815069317887
+      y 1126.8752411472487
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "preMPFn"
     labelgraphics [
       alignment "center"
       anchor "c"
       color "#000000"
       fontName "Arial"
-      fontSize 12
+      fontSize 14
       fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
+      labelOffset [
+        x 0.0
+        y 0.0
       ]
       type "text"
     ]
-    sbml [
-      product_meta_id "_294534"
-      sbmlRole "product"
-      species "Stgc"
-      stoichiometry "1.0"
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
     id 19
-    source 6
-    target 27
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph13"
     ]
-    sbml [
-      modifier_meta_id "_294546"
-      sbmlRole "modifier"
-      species "Stgm"
+    graphics [
+      x 2495.4308843374365
+      y 890.0109476396697
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "IEa_1"
+    labelgraphics [
+      alignment "center"
+      anchor "c"
+      color "#000000"
+      fontName "Arial"
+      fontSize 14
+      fontStyle "plain"
+      labelOffset [
+        x 0.0
+        y 0.0
+      ]
+      type "text"
+    ]
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
     id 20
-    source 8
-    target 28
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph19"
     ]
-    label ""
+    graphics [
+      x 2594.751814053099
+      y 1083.5299054496381
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "FZYa"
     labelgraphics [
       alignment "center"
       anchor "c"
       color "#000000"
       fontName "Arial"
-      fontSize 12
+      fontSize 14
       fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
+      labelOffset [
+        x 0.0
+        y 0.0
       ]
       type "text"
     ]
-    sbml [
-      reactant_meta_id "_294570"
-      sbmlRole "reactant"
-      species "Stgc"
-      stoichiometry "1.0"
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
     id 21
-    source 28
-    target 3
+    zlevel -1
+
+    SBGN [
+      ID "glyph108"
+    ]
     graphics [
-      fill "#000000"
+      x 2144.340275421064
+      y 635.2579688174378
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
       outline "#000000"
-      arrow "last"
-      frameThickness 1.0
+      frameThickness 2.0
       gradient 0.0
-      rounding 5.0
-      thickness 1.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_294582"
-      sbmlRole "product"
-      species "StgPc"
-      stoichiometry "1.0"
+    sbgn [
+      role "PROCESS"
     ]
   ]
-  edge [
+  node [
     id 22
-    source 1
-    target 28
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph9"
     ]
-    sbml [
-      modifier_meta_id "_294594"
-      sbmlRole "modifier"
-      species "MPFc"
+    graphics [
+      x 1981.5340707816977
+      y 336.9271557599659
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "Wee1Pn"
+    labelgraphics [
+      alignment "center"
+      anchor "c"
+      color "#000000"
+      fontName "Arial"
+      fontSize 14
+      fontStyle "plain"
+      labelOffset [
+        x 0.0
+        y 0.0
+      ]
+      type "text"
+    ]
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
     id 23
-    source 3
-    target 29
+    zlevel -1
+
+    SBGN [
+      ID "glyph82"
+    ]
     graphics [
-      fill "#000000"
+      x 2180.754412331651
+      y 360.5096304806425
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
       outline "#000000"
-      arrow "last"
-      frameThickness 1.0
+      frameThickness 2.0
       gradient 0.0
-      rounding 5.0
-      thickness 1.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_294618"
-      sbmlRole "reactant"
-      species "StgPc"
-      stoichiometry "1.0"
+    sbgn [
+      role "PROCESS"
     ]
   ]
-  edge [
+  node [
     id 24
-    source 29
-    target 8
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph20"
     ]
-    label ""
+    graphics [
+      x 2231.9482258142907
+      y 582.0446224666944
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "Wee1n"
     labelgraphics [
       alignment "center"
       anchor "c"
       color "#000000"
       fontName "Arial"
-      fontSize 12
+      fontSize 14
       fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
+      labelOffset [
+        x 0.0
+        y 0.0
       ]
       type "text"
     ]
-    sbml [
-      product_meta_id "_294630"
-      sbmlRole "product"
-      species "Stgc"
-      stoichiometry "1.0"
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
     id 25
-    source 8
-    target 30
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph12"
     ]
-    label ""
+    graphics [
+      x 2284.753616025848
+      y 869.8046045615863
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "MPFn"
     labelgraphics [
       alignment "center"
       anchor "c"
       color "#000000"
       fontName "Arial"
-      fontSize 12
+      fontSize 14
       fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
+      labelOffset [
+        x 0.0
+        y 0.0
       ]
       type "text"
     ]
-    sbml [
-      reactant_meta_id "_294654"
-      sbmlRole "reactant"
-      species "Stgc"
-      stoichiometry "1.0"
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
     id 26
-    source 3
-    target 31
+    zlevel -1
+
+    SBGN [
+      ID "glyph115"
+    ]
     graphics [
-      fill "#000000"
+      x 2204.072780691613
+      y 1592.739996812923
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
       outline "#000000"
-      arrow "last"
-      frameThickness 1.0
+      frameThickness 2.0
       gradient 0.0
-      rounding 5.0
-      thickness 1.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_294678"
-      sbmlRole "reactant"
-      species "StgPc"
-      stoichiometry "1.0"
+    sbgn [
+      role "PROCESS"
     ]
   ]
-  edge [
+  node [
     id 27
-    source 1
-    target 32
+    zlevel -1
+
+    SBGN [
+      ID "glyph80"
+    ]
     graphics [
-      fill "#000000"
+      x 2245.5239122073035
+      y 1883.292054781923
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
       outline "#000000"
-      arrow "last"
-      frameThickness 1.0
+      frameThickness 2.0
       gradient 0.0
-      rounding 5.0
-      thickness 1.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_294702"
-      sbmlRole "reactant"
-      species "MPFc"
-      stoichiometry "1.0"
+    sbgn [
+      role "PROCESS"
     ]
   ]
-  edge [
+  node [
     id 28
-    source 18
-    target 32
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph5"
     ]
-    sbml [
-      modifier_meta_id "_294714"
-      sbmlRole "modifier"
-      species "N"
-    ]
-  ]
-  edge [
-    id 29
-    source 33
-    target 1
     graphics [
-      fill "#000000"
+      x 2045.9814926906383
+      y 1882.8244439256227
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
       outline "#000000"
-      arrow "last"
-      frameThickness 1.0
+      frameThickness 2.0
       gradient 0.0
-      rounding 5.0
-      thickness 1.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
     ]
-    label ""
+    label "Stgn"
     labelgraphics [
       alignment "center"
       anchor "c"
       color "#000000"
       fontName "Arial"
-      fontSize 12
+      fontSize 14
       fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
+      labelOffset [
+        x 0.0
+        y 0.0
       ]
       type "text"
     ]
-    sbml [
-      product_meta_id "_294738"
-      sbmlRole "product"
-      species "MPFc"
-      stoichiometry "1.0"
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
+    id 29
+    zlevel -1
+
+    SBGN [
+      ID "glyph18"
+    ]
+    graphics [
+      x 2373.4243455098094
+      y 1695.3015673111413
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "StgPn"
+    labelgraphics [
+      alignment "center"
+      anchor "c"
+      color "#000000"
+      fontName "Arial"
+      fontSize 14
+      fontStyle "plain"
+      labelOffset [
+        x 0.0
+        y 0.0
+      ]
+      type "text"
+    ]
+    sbgn [
+      role "UNSPECIFIEDENTITY"
+    ]
+  ]
+  node [
     id 30
-    source 18
-    target 33
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph17"
     ]
-    sbml [
-      modifier_meta_id "_294750"
-      sbmlRole "modifier"
-      species "N"
+    graphics [
+      x 1889.277866649214
+      y 1250.8684044955307
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "N"
+    labelgraphics [
+      alignment "center"
+      anchor "c"
+      color "#000000"
+      fontName "Arial"
+      fontSize 14
+      fontStyle "plain"
+      labelOffset [
+        x 0.0
+        y 0.0
+      ]
+      type "text"
+    ]
+    sbgn [
+      role "UNSPECIFIEDENTITY"
     ]
   ]
-  edge [
+  node [
     id 31
-    source 10
-    target 33
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
+    zlevel -1
+
+    SBGN [
+      ID "glyph8"
     ]
-    sbml [
-      modifier_meta_id "_294762"
-      sbmlRole "modifier"
-      species "MPFn"
+    graphics [
+      x 361.92656987665396
+      y 1706.0986894764146
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "Xp"
+    labelgraphics [
+      alignment "center"
+      anchor "c"
+      color "#000000"
+      fontName "Arial"
+      fontSize 14
+      fontStyle "plain"
+      labelOffset [
+        x 0.0
+        y 0.0
+      ]
+      type "text"
+    ]
+    sbgn [
+      role "UNSPECIFIEDENTITY"
+    ]
+  ]
+  node [
+    id 32
+    zlevel -1
+
+    SBGN [
+      ID "glyph3"
+    ]
+    graphics [
+      x 489.7930131744015
+      y 1965.3626911010551
+      w 108.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "oval"
+    ]
+    label "Xm"
+    labelgraphics [
+      alignment "center"
+      anchor "c"
+      color "#000000"
+      fontName "Arial"
+      fontSize 14
+      fontStyle "plain"
+      labelOffset [
+        x 0.0
+        y 0.0
+      ]
+      type "text"
+    ]
+    sbgn [
+      role "UNSPECIFIEDENTITY"
+    ]
+  ]
+  node [
+    id 33
+    zlevel -1
+
+    SBGN [
+      ID "glyph30"
+    ]
+    graphics [
+      x 541.4830447579207
+      y 701.2031527919187
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 34
+    zlevel -1
+
+    SBGN [
+      ID "glyph113"
+    ]
+    graphics [
+      x 621.7940171049031
+      y 797.1445202735749
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 35
+    zlevel -1
+
+    SBGN [
+      ID "glyph104"
+    ]
+    graphics [
+      x 1023.277866649214
+      y 953.4945117640007
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 36
+    zlevel -1
+
+    SBGN [
+      ID "glyph32"
+    ]
+    graphics [
+      x 903.1887189727531
+      y 970.9972089541327
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 37
+    zlevel -1
+
+    SBGN [
+      ID "glyph77"
+    ]
+    graphics [
+      x 544.7260222499972
+      y 868.4320776645379
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 38
+    zlevel -1
+
+    SBGN [
+      ID "glyph56"
+    ]
+    graphics [
+      x 431.3388626124979
+      y 773.0102671880516
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 39
+    zlevel -1
+
+    SBGN [
+      ID "glyph92"
+    ]
+    graphics [
+      x 432.0641302183467
+      y 1527.0502611691927
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 40
+    zlevel -1
+
+    SBGN [
+      ID "glyph27"
+    ]
+    graphics [
+      x 312.08324679098405
+      y 1558.0454380239648
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 41
+    zlevel -1
+
+    SBGN [
+      ID "glyph50"
+    ]
+    graphics [
+      x 718.3510647819512
+      y 1754.6981304489764
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 42
+    zlevel -1
+
+    SBGN [
+      ID "glyph95"
+    ]
+    graphics [
+      x 806.1178088659453
+      y 1669.3240379982394
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 43
+    zlevel -1
+
+    SBGN [
+      ID "glyph103"
+    ]
+    graphics [
+      x 885.2616058687781
+      y 1779.6845479140475
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 44
+    zlevel -1
+
+    SBGN [
+      ID "glyph34"
+    ]
+    graphics [
+      x 805.6759947167811
+      y 1873.7497162018763
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 45
+    zlevel -1
+
+    SBGN [
+      ID "glyph93"
+    ]
+    graphics [
+      x 802.7260884259395
+      y 1380.6502942798252
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 46
+    zlevel -1
+
+    SBGN [
+      ID "glyph29"
+    ]
+    graphics [
+      x 714.0281757747471
+      y 1329.7910746184516
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 47
+    zlevel -1
+
+    SBGN [
+      ID "glyph116"
+    ]
+    graphics [
+      x 771.1571525577892
+      y 995.5747000163883
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 48
+    zlevel -1
+
+    SBGN [
+      ID "glyph58"
+    ]
+    graphics [
+      x 782.3294022274113
+      y 1101.03912124414
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 49
+    zlevel -1
+
+    SBGN [
+      ID "glyph44"
+    ]
+    graphics [
+      x 331.3043612083966
+      y 1180.565397321312
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 50
+    zlevel -1
+
+    SBGN [
+      ID "glyph70"
+    ]
+    graphics [
+      x 460.1608657957149
+      y 1235.2049777477778
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 51
+    zlevel -1
+
+    SBGN [
+      ID "glyph33"
+    ]
+    graphics [
+      x 1362.537903317112
+      y 751.2991912688246
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 52
+    zlevel -1
+
+    SBGN [
+      ID "glyph71"
+    ]
+    graphics [
+      x 1385.2081313364397
+      y 855.1077894587604
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 53
+    zlevel -1
+
+    SBGN [
+      ID "glyph90"
+    ]
+    graphics [
+      x 2455.475723856478
+      y 585.9194402578032
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 54
+    zlevel -1
+
+    SBGN [
+      ID "glyph37"
+    ]
+    graphics [
+      x 2596.7968336481117
+      y 479.96482822393864
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 55
+    zlevel -1
+
+    SBGN [
+      ID "glyph24"
+    ]
+    graphics [
+      x 1367.7128855421688
+      y 1130.5326288572128
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 56
+    zlevel -1
+
+    SBGN [
+      ID "glyph66"
+    ]
+    graphics [
+      x 1312.170052571535
+      y 1027.5371927679141
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 57
+    zlevel -1
+
+    SBGN [
+      ID "glyph111"
+    ]
+    graphics [
+      x 1091.2147324507168
+      y 1089.201075069685
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 58
+    zlevel -1
+
+    SBGN [
+      ID "glyph60"
+    ]
+    graphics [
+      x 1023.1153084368343
+      y 1058.2838431600367
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 59
+    zlevel -1
+
+    SBGN [
+      ID "glyph45"
+    ]
+    graphics [
+      x 1553.606568602676
+      y 297.09816817582123
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 60
+    zlevel -1
+
+    SBGN [
+      ID "glyph83"
+    ]
+    graphics [
+      x 1562.8328951726726
+      y 720.6346025064938
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 61
+    zlevel -1
+
+    SBGN [
+      ID "glyph84"
+    ]
+    graphics [
+      x 2887.463420439135
+      y 1232.3785255464554
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 62
+    zlevel -1
+
+    SBGN [
+      ID "glyph47"
+    ]
+    graphics [
+      x 2965.0723373799883
+      y 1367.2321587895185
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 63
+    zlevel -1
+
+    SBGN [
+      ID "glyph87"
+    ]
+    graphics [
+      x 2114.1277573069783
+      y 250.7996531009669
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 64
+    zlevel -1
+
+    SBGN [
+      ID "glyph48"
+    ]
+    graphics [
+      x 2289.837467309637
+      y 163.9997250350716
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 65
+    zlevel -1
+
+    SBGN [
+      ID "glyph55"
+    ]
+    graphics [
+      x 2095.0410930221806
+      y 750.4736965624202
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 66
+    zlevel -1
+
+    SBGN [
+      ID "glyph112"
+    ]
+    graphics [
+      x 2015.3211323291744
+      y 781.8064758281173
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 67
+    zlevel -1
+
+    SBGN [
+      ID "glyph65"
+    ]
+    graphics [
+      x 955.9079257663652
+      y 812.2869782531507
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 68
+    zlevel -1
+
+    SBGN [
+      ID "glyph53"
+    ]
+    graphics [
+      x 854.3612046299404
+      y 790.3474732159382
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 69
+    zlevel -1
+
+    SBGN [
+      ID "glyph51"
+    ]
+    graphics [
+      x 1799.939096843087
+      y 148.94122150800263
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 70
+    zlevel -1
+
+    SBGN [
+      ID "glyph97"
+    ]
+    graphics [
+      x 1838.399688537982
+      y 334.16953588526667
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 71
+    zlevel -1
+
+    SBGN [
+      ID "glyph72"
+    ]
+    graphics [
+      x 2281.478919037754
+      y 373.57725346696
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 72
+    zlevel -1
+
+    SBGN [
+      ID "glyph54"
+    ]
+    graphics [
+      x 2302.0891895058794
+      y 251.1432560991775
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 73
+    zlevel -1
+
+    SBGN [
+      ID "glyph43"
+    ]
+    graphics [
+      x 1398.9055240320395
+      y 338.99883585838415
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 74
+    zlevel -1
+
+    SBGN [
+      ID "glyph99"
+    ]
+    graphics [
+      x 1442.9184934997047
+      y 654.4363072364658
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 75
+    zlevel -1
+
+    SBGN [
+      ID "glyph74"
+    ]
+    graphics [
+      x 1094.1318002329317
+      y 730.0438335982833
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 76
+    zlevel -1
+
+    SBGN [
+      ID "glyph49"
+    ]
+    graphics [
+      x 1026.6150164292576
+      y 770.3202916404009
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 77
+    zlevel -1
+
+    SBGN [
+      ID "glyph28"
+    ]
+    graphics [
+      x 1197.5340707816977
+      y 387.7976670357041
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 78
+    zlevel -1
+
+    SBGN [
+      ID "glyph107"
+    ]
+    graphics [
+      x 1265.8087841325432
+      y 476.7495479354802
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 79
+    zlevel -1
+
+    SBGN [
+      ID "glyph79"
+    ]
+    graphics [
+      x 2473.308589979373
+      y 1842.1226904743917
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 80
+    zlevel -1
+
+    SBGN [
+      ID "glyph36"
+    ]
+    graphics [
+      x 2553.6282004250806
+      y 1932.28155977422
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 81
+    zlevel -1
+
+    SBGN [
+      ID "glyph38"
+    ]
+    graphics [
+      x 937.3071706943119
+      y 1278.3532545637227
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 82
+    zlevel -1
+
+    SBGN [
+      ID "glyph64"
+    ]
+    graphics [
+      x 948.3474766480631
+      y 1350.4434771744836
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 83
+    zlevel -1
+
+    SBGN [
+      ID "glyph63"
+    ]
+    graphics [
+      x 897.4537578771688
+      y 1193.581253909253
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 84
+    zlevel -1
+
+    SBGN [
+      ID "glyph31"
+    ]
+    graphics [
+      x 830.9848000780621
+      y 1146.2727082734182
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 85
+    zlevel -1
+
+    SBGN [
+      ID "glyph21"
+    ]
+    graphics [
+      x 2183.29919028531
+      y 1809.592416304949
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 86
+    zlevel -1
+
+    SBGN [
+      ID "glyph105"
+    ]
+    graphics [
+      x 2261.957117442853
+      y 1716.6513161760258
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 87
+    zlevel -1
+
+    SBGN [
+      ID "glyph86"
+    ]
+    graphics [
+      x 2001.3511895137726
+      y 2047.5063194809204
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 88
+    zlevel -1
+
+    SBGN [
+      ID "glyph42"
+    ]
+    graphics [
+      x 1938.1701019483662
+      y 2159.0143100802366
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 89
+    zlevel -1
+
+    SBGN [
+      ID "glyph25"
+    ]
+    graphics [
+      x 1975.2385117302547
+      y 1772.6897958080626
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 90
+    zlevel -1
+
+    SBGN [
+      ID "glyph100"
+    ]
+    graphics [
+      x 1861.9280859609698
+      y 1849.3751741859578
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 91
+    zlevel -1
+
+    SBGN [
+      ID "glyph102"
+    ]
+    graphics [
+      x 1000.599603149185
+      y 1541.8465050244163
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 92
+    zlevel -1
+
+    SBGN [
+      ID "glyph46"
+    ]
+    graphics [
+      x 1132.0205035036379
+      y 1593.0641570972375
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 93
+    zlevel -1
+
+    SBGN [
+      ID "glyph41"
+    ]
+    graphics [
+      x 1808.2813134310036
+      y 2154.822555923911
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 94
+    zlevel -1
+
+    SBGN [
+      ID "glyph69"
+    ]
+    graphics [
+      x 1872.503269337083
+      y 1961.9773151076624
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 95
+    zlevel -1
+
+    SBGN [
+      ID "glyph114"
+    ]
+    graphics [
+      x 2446.9450080635797
+      y 1151.360888236767
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 96
+    zlevel -1
+
+    SBGN [
+      ID "glyph23"
+    ]
+    graphics [
+      x 3018.341303750578
+      y 1223.782979536294
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 97
+    zlevel -1
+
+    SBGN [
+      ID "glyph110"
+    ]
+    graphics [
+      x 2422.771304954498
+      y 1047.075927078671
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 98
+    zlevel -1
+
+    SBGN [
+      ID "glyph40"
+    ]
+    graphics [
+      x 2516.398370205892
+      y 986.1948264347784
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 99
+    zlevel -1
+
+    SBGN [
+      ID "glyph73"
+    ]
+    graphics [
+      x 2698.6537223329397
+      y 815.2711602340507
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 100
+    zlevel -1
+
+    SBGN [
+      ID "glyph57"
+    ]
+    graphics [
+      x 2800.928584493882
+      y 682.8686267114745
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 101
+    zlevel -1
+
+    SBGN [
+      ID "glyph22"
+    ]
+    graphics [
+      x 2555.5944655281164
+      y 678.6178492971658
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 102
+    zlevel -1
+
+    SBGN [
+      ID "glyph89"
+    ]
+    graphics [
+      x 2483.297553427912
+      y 786.8016670577986
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 103
+    zlevel -1
+
+    SBGN [
+      ID "glyph26"
+    ]
+    graphics [
+      x 2781.147950347109
+      y 894.7307411531413
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 104
+    zlevel -1
+
+    SBGN [
+      ID "glyph106"
+    ]
+    graphics [
+      x 2645.7251602302767
+      y 987.3920571924111
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 105
+    zlevel -1
+
+    SBGN [
+      ID "glyph96"
+    ]
+    graphics [
+      x 2722.953707864246
+      y 1138.0929208218813
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 106
+    zlevel -1
+
+    SBGN [
+      ID "glyph59"
+    ]
+    graphics [
+      x 2827.040561542477
+      y 1187.397182468746
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 107
+    zlevel -1
+
+    SBGN [
+      ID "glyph101"
+    ]
+    graphics [
+      x 2107.609144097034
+      y 2063.1545228917576
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 108
+    zlevel -1
+
+    SBGN [
+      ID "glyph52"
+    ]
+    graphics [
+      x 2099.9971014779185
+      y 2188.430117325556
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 109
+    zlevel -1
+
+    SBGN [
+      ID "glyph78"
+    ]
+    graphics [
+      x 2387.1917877673914
+      y 1918.1024876567808
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 110
+    zlevel -1
+
+    SBGN [
+      ID "glyph39"
+    ]
+    graphics [
+      x 2402.320766866089
+      y 2040.6578319126252
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 111
+    zlevel -1
+
+    SBGN [
+      ID "glyph61"
+    ]
+    graphics [
+      x 2492.5994853189113
+      y 1358.7278193586703
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 112
+    zlevel -1
+
+    SBGN [
+      ID "glyph76"
+    ]
+    graphics [
+      x 2399.267044981738
+      y 1350.266941443755
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 113
+    zlevel -1
+
+    SBGN [
+      ID "glyph62"
+    ]
+    graphics [
+      x 1680.9287834931001
+      y 2144.874126047335
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 114
+    zlevel -1
+
+    SBGN [
+      ID "glyph85"
+    ]
+    graphics [
+      x 1689.2081925561251
+      y 2016.5341024819882
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
+    ]
+  ]
+  node [
+    id 115
+    zlevel -1
+
+    SBGN [
+      ID "glyph35"
+    ]
+    graphics [
+      x 241.94819645595817
+      y 1929.9745938815959
+      w 60.0
+      h 60.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "de.ipk_gatersleben.ag_nw.graffiti.plugins.shapes.SourceSinkShape"
+    ]
+    sbgn [
+      role "SOURCESINK"
+    ]
+  ]
+  node [
+    id 116
+    zlevel -1
+
+    SBGN [
+      ID "glyph75"
+    ]
+    graphics [
+      x 348.43439441973715
+      y 1821.949205858793
+      w 24.0
+      h 24.0
+      fill "#FFFFFF"
+      outline "#000000"
+      frameThickness 2.0
+      gradient 0.0
+      opacity 1.0
+      rounding 0.0
+      type "rectangle"
+    ]
+    sbgn [
+      role "PROCESS"
     ]
   ]
   edge [
-    id 32
+    id 117
     source 34
     target 10
+    SBGN [
+      BendOut "621.7940171049031;821.1445202735749"
+      ID "arc1"
+    ]
     graphics [
       fill "#000000"
       outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 621.7940171049031 y 821.1445202735749 ]
+        point [ x 0.0 y 0.0 ]
       ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_294786"
-      sbmlRole "product"
-      species "MPFn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 33
-    source 1
-    target 34
-    graphics [
-      fill "#404040"
-      outline "#404040"
       arrow "last"
-      frameThickness 1.0
+      frameThickness 1.5
       gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_294798"
-      sbmlRole "modifier"
-      species "MPFc"
-    ]
-  ]
-  edge [
-    id 34
-    source 10
-    target 35
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_294822"
-      sbmlRole "reactant"
-      species "MPFn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 35
-    source 36
-    target 2
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_294849"
-      sbmlRole "product"
-      species "preMPFc"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 36
-    source 11
-    target 36
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_294861"
-      sbmlRole "modifier"
-      species "preMPFn"
-    ]
-  ]
-  edge [
-    id 37
-    source 18
-    target 36
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_294873"
-      sbmlRole "modifier"
-      species "N"
-    ]
-  ]
-  edge [
-    id 38
-    source 2
-    target 37
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_294898"
-      sbmlRole "reactant"
-      species "preMPFc"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 39
-    source 18
-    target 37
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_294910"
-      sbmlRole "modifier"
-      species "N"
-    ]
-  ]
-  edge [
-    id 40
-    source 38
-    target 11
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_294935"
-      sbmlRole "product"
-      species "preMPFn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 41
-    source 2
-    target 38
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_294947"
-      sbmlRole "modifier"
-      species "preMPFc"
-    ]
-  ]
-  edge [
-    id 42
-    source 11
-    target 39
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_294972"
-      sbmlRole "reactant"
-      species "preMPFn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 43
-    source 12
-    target 40
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_294998"
-      sbmlRole "reactant"
-      species "Wee1Pn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 44
-    source 41
-    target 5
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295024"
-      sbmlRole "product"
-      species "Wee1Pc"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 45
-    source 12
-    target 41
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295037"
-      sbmlRole "modifier"
-      species "Wee1Pn"
-    ]
-  ]
-  edge [
-    id 46
-    source 18
-    target 41
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295050"
-      sbmlRole "modifier"
-      species "N"
-    ]
-  ]
-  edge [
-    id 47
-    source 5
-    target 42
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295075"
-      sbmlRole "reactant"
-      species "Wee1Pc"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 48
-    source 18
-    target 42
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295087"
-      sbmlRole "modifier"
-      species "N"
-    ]
-  ]
-  edge [
-    id 49
-    source 43
-    target 12
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295113"
-      sbmlRole "product"
-      species "Wee1Pn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 50
-    source 5
-    target 43
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295126"
-      sbmlRole "modifier"
-      species "Wee1Pc"
-    ]
-  ]
-  edge [
-    id 51
-    source 13
-    target 44
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295152"
-      sbmlRole "reactant"
-      species "Wee1n"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 52
-    source 45
-    target 4
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295178"
-      sbmlRole "product"
-      species "Wee1c"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 53
-    source 13
-    target 45
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295191"
-      sbmlRole "modifier"
-      species "Wee1n"
-    ]
-  ]
-  edge [
-    id 54
-    source 18
-    target 45
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295203"
-      sbmlRole "modifier"
-      species "N"
-    ]
-  ]
-  edge [
-    id 55
-    source 4
-    target 46
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295227"
-      sbmlRole "reactant"
-      species "Wee1c"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 56
-    source 18
-    target 46
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295239"
-      sbmlRole "modifier"
-      species "N"
-    ]
-  ]
-  edge [
-    id 57
-    source 47
-    target 13
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295263"
-      sbmlRole "product"
-      species "Wee1n"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 58
-    source 4
-    target 47
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295275"
-      sbmlRole "modifier"
-      species "Wee1c"
-    ]
-  ]
-  edge [
-    id 59
-    source 14
-    target 48
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295299"
-      sbmlRole "reactant"
-      species "StgPn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 60
-    source 49
-    target 3
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295323"
-      sbmlRole "product"
-      species "StgPc"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 61
-    source 14
-    target 49
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295335"
-      sbmlRole "modifier"
-      species "StgPn"
-    ]
-  ]
-  edge [
-    id 62
-    source 18
-    target 49
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295347"
-      sbmlRole "modifier"
-      species "N"
-    ]
-  ]
-  edge [
-    id 63
-    source 3
-    target 50
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295371"
-      sbmlRole "reactant"
-      species "StgPc"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 64
-    source 18
-    target 50
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295383"
-      sbmlRole "modifier"
-      species "N"
-    ]
-  ]
-  edge [
-    id 65
-    source 51
-    target 14
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295407"
-      sbmlRole "product"
-      species "StgPn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 66
-    source 3
-    target 51
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295419"
-      sbmlRole "modifier"
-      species "StgPc"
-    ]
-  ]
-  edge [
-    id 67
-    source 15
-    target 52
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295444"
-      sbmlRole "reactant"
-      species "Stgn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 68
-    source 53
-    target 8
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295468"
-      sbmlRole "product"
-      species "Stgc"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 69
-    source 15
-    target 53
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295480"
-      sbmlRole "modifier"
-      species "Stgn"
-    ]
-  ]
-  edge [
-    id 70
-    source 18
-    target 53
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295492"
-      sbmlRole "modifier"
-      species "N"
-    ]
-  ]
-  edge [
-    id 71
-    source 8
-    target 54
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295516"
-      sbmlRole "reactant"
-      species "Stgc"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 72
-    source 18
-    target 54
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295528"
-      sbmlRole "modifier"
-      species "N"
-    ]
-  ]
-  edge [
-    id 73
-    source 55
-    target 15
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295552"
-      sbmlRole "product"
-      species "Stgn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 74
-    source 8
-    target 55
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295564"
-      sbmlRole "modifier"
-      species "Stgc"
-    ]
-  ]
-  edge [
-    id 75
-    source 11
-    target 56
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295588"
-      sbmlRole "reactant"
-      species "preMPFn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 76
-    source 56
-    target 10
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295600"
-      sbmlRole "product"
-      species "MPFn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 77
-    source 14
-    target 56
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295612"
-      sbmlRole "modifier"
-      species "StgPn"
-    ]
-  ]
-  edge [
-    id 78
-    source 10
-    target 57
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295636"
-      sbmlRole "reactant"
-      species "MPFn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 79
-    source 57
-    target 11
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295648"
-      sbmlRole "product"
-      species "preMPFn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 80
-    source 13
-    target 57
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295660"
-      sbmlRole "modifier"
-      species "Wee1n"
-    ]
-  ]
-  edge [
-    id 81
-    source 11
-    target 58
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295684"
-      sbmlRole "reactant"
-      species "preMPFn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 82
-    source 16
-    target 58
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295696"
-      sbmlRole "modifier"
-      species "FZYa"
-    ]
-  ]
-  edge [
-    id 83
-    source 10
-    target 59
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295720"
-      sbmlRole "reactant"
-      species "MPFn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 84
-    source 16
-    target 59
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295732"
-      sbmlRole "modifier"
-      species "FZYa"
-    ]
-  ]
-  edge [
-    id 85
-    source 17
-    target 60
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295756"
-      sbmlRole "reactant"
-      species "IEa_1"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 86
-    source 61
-    target 17
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295780"
-      sbmlRole "product"
-      species "IEa_1"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 87
-    source 10
-    target 61
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295792"
-      sbmlRole "modifier"
-      species "MPFn"
-    ]
-  ]
-  edge [
-    id 88
-    source 62
-    target 16
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295816"
-      sbmlRole "product"
-      species "FZYa"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 89
-    source 17
-    target 62
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295828"
-      sbmlRole "modifier"
-      species "IEa_1"
-    ]
-  ]
-  edge [
-    id 90
-    source 16
-    target 63
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295852"
-      sbmlRole "reactant"
-      species "FZYa"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 91
-    source 13
-    target 64
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295876"
-      sbmlRole "reactant"
-      species "Wee1n"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 92
-    source 64
-    target 12
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295888"
-      sbmlRole "product"
-      species "Wee1Pn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 93
-    source 10
-    target 64
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
-    ]
-    sbml [
-      modifier_meta_id "_295900"
-      sbmlRole "modifier"
-      species "MPFn"
-    ]
-  ]
-  edge [
-    id 94
-    source 12
-    target 65
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
+      opacity 1.0
       rounding 5.0
       type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
-      thickness 1.0
+      thickness 15.0
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295924"
-      sbmlRole "reactant"
-      species "Wee1Pn"
-      stoichiometry "1.0"
+    sbgn [
+      role "PRODUCTION"
     ]
   ]
   edge [
-    id 95
-    source 65
-    target 13
+    id 118
+    source 11
+    target 3
+    SBGN [
+      BendIn "680.9022506310084;1064.9045980319513"
+      ID "arc2"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 680.9022506310084 y 1064.9045980319513 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 119
+    source 3
+    target 10
+    SBGN [
+      BendOut "680.9022506310084;1016.9045980319513"
+      ID "arc3"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 680.9022506310084 y 1016.9045980319513 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 120
+    source 14
+    target 3
+    SBGN [
+      ID "arc4"
+    ]
     graphics [
       fill "#000000"
       outline "#000000"
       arrow "last"
-      frameThickness 1.0
+      arrowheadstyle "modulation"
+      frameThickness 1.5
       gradient 0.0
+      opacity 1.0
       rounding 5.0
-      thickness 1.0
+      thickness 15.0
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295936"
-      sbmlRole "product"
-      species "Wee1n"
-      stoichiometry "1.0"
+    sbgn [
+      role "MODULATION"
     ]
   ]
   edge [
-    id 96
-    source 15
-    target 66
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_295960"
-      sbmlRole "reactant"
-      species "Stgn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 97
-    source 66
-    target 14
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_295972"
-      sbmlRole "product"
-      species "StgPn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 98
+    id 121
     source 10
-    target 66
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
+    target 4
+    SBGN [
+      BendIn "1185.5904157625719;900.3971360182195"
+      ID "arc5"
     ]
-    sbml [
-      modifier_meta_id "_295984"
-      sbmlRole "modifier"
-      species "MPFn"
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1185.5904157625719 y 900.3971360182195 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
     ]
   ]
   edge [
-    id 99
-    source 14
-    target 67
+    id 122
+    source 4
+    target 11
+    SBGN [
+      BendOut "1233.5904157625719;900.3971360182195"
+      ID "arc6"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1233.5904157625719 y 900.3971360182195 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 123
+    source 13
+    target 4
+    SBGN [
+      ID "arc7"
+    ]
     graphics [
       fill "#000000"
       outline "#000000"
       arrow "last"
-      frameThickness 1.0
+      arrowheadstyle "modulation"
+      frameThickness 1.5
       gradient 0.0
+      opacity 1.0
       rounding 5.0
-      thickness 1.0
+      thickness 15.0
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_296008"
-      sbmlRole "reactant"
-      species "StgPn"
-      stoichiometry "1.0"
+    sbgn [
+      role "MODULATION"
     ]
   ]
   edge [
-    id 100
-    source 67
+    id 124
+    source 11
+    target 35
+    SBGN [
+      BendIn "1047.277866649214;953.4945117640007"
+      ID "arc8"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1047.277866649214 y 953.4945117640007 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 125
+    source 10
+    target 37
+    SBGN [
+      BendIn "568.7260222499972;868.4320776645379"
+      ID "arc9"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 568.7260222499972 y 868.4320776645379 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 126
+    source 13
+    target 5
+    SBGN [
+      BendIn "736.4939769594748;580.9404216155924"
+      ID "arc10"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 736.4939769594748 y 580.9404216155924 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 127
+    source 5
+    target 12
+    SBGN [
+      BendOut "784.4939769594748;580.9404216155924"
+      ID "arc11"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 784.4939769594748 y 580.9404216155924 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 128
+    source 10
+    target 5
+    SBGN [
+      ID "arc12"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 129
+    source 12
+    target 6
+    SBGN [
+      BendIn "1020.6280739217891;568.2895662948156"
+      ID "arc13"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1020.6280739217891 y 568.2895662948156 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 130
+    source 6
+    target 13
+    SBGN [
+      BendOut "1020.6280739217891;520.2895662948156"
+      ID "arc14"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1020.6280739217891 y 520.2895662948156 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 131
+    source 12
+    target 6
+    SBGN [
+      ID "arc15"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 132
+    source 7
+    target 39
+    SBGN [
+      BendIn "456.0641302183467;1527.0502611691927"
+      ID "arc16"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 456.0641302183467 y 1527.0502611691927 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 133
+    source 31
+    target 39
+    SBGN [
+      ID "arc17"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 134
+    source 42
     target 15
+    SBGN [
+      BendOut "806.1178088659453;1645.3240379982394"
+      ID "arc18"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 806.1178088659453 y 1645.3240379982394 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 135
+    source 7
+    target 42
+    SBGN [
+      ID "arc19"
+    ]
     graphics [
       fill "#000000"
       outline "#000000"
       arrow "last"
-      frameThickness 1.0
+      arrowheadstyle "modulation"
+      frameThickness 1.5
       gradient 0.0
+      opacity 1.0
       rounding 5.0
-      thickness 1.0
+      thickness 15.0
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_296020"
-      sbmlRole "product"
-      species "Stgn"
-      stoichiometry "1.0"
+    sbgn [
+      role "MODULATION"
     ]
   ]
   edge [
-    id 101
+    id 136
     source 15
-    target 68
+    target 8
+    SBGN [
+      BendIn "559.706636994566;1184.4357958826545"
+      ID "arc20"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 559.706636994566 y 1184.4357958826545 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 137
+    source 8
+    target 14
+    SBGN [
+      BendOut "607.706636994566;1184.4357958826545"
+      ID "arc21"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 607.706636994566 y 1184.4357958826545 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 138
+    source 10
+    target 8
+    SBGN [
+      ID "arc22"
+    ]
     graphics [
       fill "#000000"
       outline "#000000"
       arrow "last"
-      frameThickness 1.0
+      arrowheadstyle "modulation"
+      frameThickness 1.5
       gradient 0.0
+      opacity 1.0
       rounding 5.0
-      thickness 1.0
+      thickness 15.0
     ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_296044"
-      sbmlRole "reactant"
-      species "Stgn"
-      stoichiometry "1.0"
+    sbgn [
+      role "MODULATION"
     ]
   ]
   edge [
-    id 102
+    id 139
     source 14
-    target 69
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      reactant_meta_id "_296068"
-      sbmlRole "reactant"
-      species "StgPn"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 103
-    source 70
-    target 18
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_296093"
-      sbmlRole "product"
-      species "N"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 104
-    source 71
     target 9
+    SBGN [
+      BendIn "863.8836105321043;1473.9363128110845"
+      ID "arc23"
+    ]
     graphics [
       fill "#000000"
       outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 863.8836105321043 y 1473.9363128110845 ]
+        point [ x 0.0 y 0.0 ]
       ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_296117"
-      sbmlRole "product"
-      species "Xm"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 105
-    source 18
-    target 71
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
+      arrow "none"
+      frameThickness 1.5
       gradient 0.0
-      linemode "5.0 5.0 0.0"
+      opacity 1.0
       rounding 5.0
-      thickness 1.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
     ]
-    sbml [
-      modifier_meta_id "_296129"
-      sbmlRole "modifier"
-      species "N"
+    sbgn [
+      role "CONSUMPTION"
     ]
   ]
   edge [
-    id 106
-    source 72
-    target 7
-    graphics [
-      fill "#000000"
-      outline "#000000"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      rounding 5.0
-      thickness 1.0
-    ]
-    label ""
-    labelgraphics [
-      alignment "center"
-      anchor "c"
-      color "#000000"
-      fontName "Arial"
-      fontSize 12
-      fontStyle "plain"
-      position [
-        absHor 0.0
-        absVert 0.0
-        alignSegment 0
-        relAlign 0.5
-      ]
-      type "text"
-    ]
-    sbml [
-      product_meta_id "_296153"
-      sbmlRole "product"
-      species "Xp"
-      stoichiometry "1.0"
-    ]
-  ]
-  edge [
-    id 107
+    id 140
     source 9
-    target 72
-    graphics [
-      fill "#404040"
-      outline "#404040"
-      arrow "last"
-      frameThickness 1.0
-      gradient 0.0
-      linemode "5.0 5.0 0.0"
-      rounding 5.0
-      thickness 1.0
+    target 15
+    SBGN [
+      BendOut "863.8836105321043;1521.9363128110845"
+      ID "arc24"
     ]
-    sbml [
-      modifier_meta_id "_296165"
-      sbmlRole "modifier"
-      species "Xm"
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 863.8836105321043 y 1521.9363128110845 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 141
+    source 15
+    target 43
+    SBGN [
+      BendIn "885.2616058687781;1755.6845479140475"
+      ID "arc25"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 885.2616058687781 y 1755.6845479140475 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 142
+    source 14
+    target 45
+    SBGN [
+      BendIn "826.7260884259395;1380.6502942798252"
+      ID "arc26"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 826.7260884259395 y 1380.6502942798252 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 143
+    source 10
+    target 47
+    SBGN [
+      BendIn "771.1571525577892;971.5747000163883"
+      ID "arc27"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 771.1571525577892 y 971.5747000163883 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 144
+    source 30
+    target 47
+    SBGN [
+      ID "arc28"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 145
+    source 50
+    target 10
+    SBGN [
+      BendOut "484.1608657957149;1235.2049777477778"
+      ID "arc29"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 484.1608657957149 y 1235.2049777477778 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 146
+    source 30
+    target 50
+    SBGN [
+      ID "arc30"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 147
+    source 25
+    target 50
+    SBGN [
+      ID "arc31"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 148
+    source 52
+    target 25
+    SBGN [
+      BendOut "1409.2081313364397;855.1077894587604"
+      ID "arc32"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1409.2081313364397 y 855.1077894587604 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 149
+    source 10
+    target 52
+    SBGN [
+      ID "arc33"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 150
+    source 25
+    target 53
+    SBGN [
+      BendIn "2431.475723856478;585.9194402578032"
+      ID "arc34"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2431.475723856478 y 585.9194402578032 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 151
+    source 56
+    target 11
+    SBGN [
+      BendOut "1312.170052571535;1003.5371927679141"
+      ID "arc35"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1312.170052571535 y 1003.5371927679141 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 152
+    source 18
+    target 56
+    SBGN [
+      ID "arc36"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 153
+    source 30
+    target 56
+    SBGN [
+      ID "arc37"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 154
+    source 11
+    target 57
+    SBGN [
+      BendIn "1115.2147324507168;1089.201075069685"
+      ID "arc38"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1115.2147324507168 y 1089.201075069685 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 155
+    source 30
+    target 57
+    SBGN [
+      ID "arc39"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 156
+    source 60
+    target 18
+    SBGN [
+      BendOut "1562.8328951726726;744.6346025064938"
+      ID "arc40"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1562.8328951726726 y 744.6346025064938 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 157
+    source 11
+    target 60
+    SBGN [
+      ID "arc41"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 158
+    source 18
+    target 61
+    SBGN [
+      BendIn "2887.463420439135;1208.3785255464554"
+      ID "arc42"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2887.463420439135 y 1208.3785255464554 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 159
+    source 22
+    target 63
+    SBGN [
+      BendIn "2090.1277573069783;250.7996531009669"
+      ID "arc43"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2090.1277573069783 y 250.7996531009669 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 160
+    source 66
+    target 12
+    SBGN [
+      BendOut "1991.3211323291744;781.8064758281173"
+      ID "arc44"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1991.3211323291744 y 781.8064758281173 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 161
+    source 22
+    target 66
+    SBGN [
+      ID "arc45"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 162
+    source 30
+    target 66
+    SBGN [
+      ID "arc46"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 163
+    source 12
+    target 67
+    SBGN [
+      BendIn "955.9079257663652;788.2869782531507"
+      ID "arc47"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 955.9079257663652 y 788.2869782531507 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 164
+    source 30
+    target 67
+    SBGN [
+      ID "arc48"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 165
+    source 70
+    target 22
+    SBGN [
+      BendOut "1862.399688537982;334.16953588526667"
+      ID "arc49"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1862.399688537982 y 334.16953588526667 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 166
+    source 12
+    target 70
+    SBGN [
+      ID "arc50"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 167
+    source 24
+    target 71
+    SBGN [
+      BendIn "2281.478919037754;397.57725346696"
+      ID "arc51"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2281.478919037754 y 397.57725346696 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 168
+    source 74
+    target 13
+    SBGN [
+      BendOut "1442.9184934997047;678.4363072364658"
+      ID "arc52"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1442.9184934997047 y 678.4363072364658 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 169
+    source 24
+    target 74
+    SBGN [
+      ID "arc53"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 170
+    source 30
+    target 74
+    SBGN [
+      ID "arc54"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 171
+    source 13
+    target 75
+    SBGN [
+      BendIn "1094.1318002329317;706.0438335982833"
+      ID "arc55"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1094.1318002329317 y 706.0438335982833 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 172
+    source 30
+    target 75
+    SBGN [
+      ID "arc56"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 173
+    source 78
+    target 24
+    SBGN [
+      BendOut "1265.8087841325432;500.7495479354802"
+      ID "arc57"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1265.8087841325432 y 500.7495479354802 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 174
+    source 13
+    target 78
+    SBGN [
+      ID "arc58"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 175
+    source 29
+    target 79
+    SBGN [
+      BendIn "2473.308589979373;1818.1226904743917"
+      ID "arc59"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2473.308589979373 y 1818.1226904743917 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 176
+    source 82
+    target 14
+    SBGN [
+      BendOut "948.3474766480631;1374.4434771744836"
+      ID "arc60"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 948.3474766480631 y 1374.4434771744836 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 177
+    source 29
+    target 82
+    SBGN [
+      ID "arc61"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 178
+    source 30
+    target 82
+    SBGN [
+      ID "arc62"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 179
+    source 14
+    target 83
+    SBGN [
+      BendIn "897.4537578771688;1217.581253909253"
+      ID "arc63"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 897.4537578771688 y 1217.581253909253 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 180
+    source 30
+    target 83
+    SBGN [
+      ID "arc64"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 181
+    source 86
+    target 29
+    SBGN [
+      BendOut "2285.957117442853;1716.6513161760258"
+      ID "arc65"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2285.957117442853 y 1716.6513161760258 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 182
+    source 14
+    target 86
+    SBGN [
+      ID "arc66"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 183
+    source 28
+    target 87
+    SBGN [
+      BendIn "2001.3511895137726;2023.5063194809204"
+      ID "arc67"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2001.3511895137726 y 2023.5063194809204 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 184
+    source 90
+    target 15
+    SBGN [
+      BendOut "1837.9280859609698;1849.3751741859578"
+      ID "arc68"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1837.9280859609698 y 1849.3751741859578 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 185
+    source 28
+    target 90
+    SBGN [
+      ID "arc69"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 186
+    source 30
+    target 90
+    SBGN [
+      ID "arc70"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 187
+    source 15
+    target 91
+    SBGN [
+      BendIn "976.599603149185;1541.8465050244163"
+      ID "arc71"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 976.599603149185 y 1541.8465050244163 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 188
+    source 30
+    target 91
+    SBGN [
+      ID "arc72"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 189
+    source 94
+    target 28
+    SBGN [
+      BendOut "1872.503269337083;1937.9773151076624"
+      ID "arc73"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1872.503269337083 y 1937.9773151076624 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 190
+    source 15
+    target 94
+    SBGN [
+      ID "arc74"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 191
+    source 18
+    target 16
+    SBGN [
+      BendIn "2524.164979872983;1253.1416996639437"
+      ID "arc75"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2524.164979872983 y 1253.1416996639437 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 192
+    source 16
+    target 25
+    SBGN [
+      BendOut "2572.164979872983;1253.1416996639437"
+      ID "arc76"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2572.164979872983 y 1253.1416996639437 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 193
+    source 29
+    target 16
+    SBGN [
+      ID "arc77"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 194
+    source 25
+    target 17
+    SBGN [
+      BendIn "2369.548721830637;891.9455362885205"
+      ID "arc78"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2369.548721830637 y 891.9455362885205 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 195
+    source 17
+    target 18
+    SBGN [
+      BendOut "2417.548721830637;891.9455362885205"
+      ID "arc79"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2417.548721830637 y 891.9455362885205 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 196
+    source 24
+    target 17
+    SBGN [
+      ID "arc80"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 197
+    source 18
+    target 95
+    SBGN [
+      BendIn "2422.9450080635797;1151.360888236767"
+      ID "arc81"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2422.9450080635797 y 1151.360888236767 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 198
+    source 20
+    target 95
+    SBGN [
+      ID "arc82"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 199
+    source 25
+    target 97
+    SBGN [
+      BendIn "2398.771304954498;1047.075927078671"
+      ID "arc83"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2398.771304954498 y 1047.075927078671 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 200
+    source 20
+    target 97
+    SBGN [
+      ID "arc84"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 201
+    source 19
+    target 99
+    SBGN [
+      BendIn "2674.6537223329397;815.2711602340507"
+      ID "arc85"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2674.6537223329397 y 815.2711602340507 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 202
+    source 102
+    target 19
+    SBGN [
+      BendOut "2483.297553427912;810.8016670577986"
+      ID "arc86"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2483.297553427912 y 810.8016670577986 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 203
+    source 25
+    target 102
+    SBGN [
+      ID "arc87"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 204
+    source 104
+    target 20
+    SBGN [
+      BendOut "2645.7251602302767;1011.3920571924111"
+      ID "arc88"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2645.7251602302767 y 1011.3920571924111 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 205
+    source 19
+    target 104
+    SBGN [
+      ID "arc89"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 206
+    source 20
+    target 105
+    SBGN [
+      BendIn "2698.953707864246;1138.0929208218813"
+      ID "arc90"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2698.953707864246 y 1138.0929208218813 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 207
+    source 24
+    target 21
+    SBGN [
+      BendIn "2168.340275421064;635.2579688174378"
+      ID "arc91"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2168.340275421064 y 635.2579688174378 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 208
+    source 21
+    target 22
+    SBGN [
+      BendOut "2120.340275421064;635.2579688174378"
+      ID "arc92"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2120.340275421064 y 635.2579688174378 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 209
+    source 25
+    target 21
+    SBGN [
+      ID "arc93"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 210
+    source 22
+    target 23
+    SBGN [
+      BendIn "2156.754412331651;360.5096304806425"
+      ID "arc94"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2156.754412331651 y 360.5096304806425 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 211
+    source 23
+    target 24
+    SBGN [
+      BendOut "2204.754412331651;360.5096304806425"
+      ID "arc95"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2204.754412331651 y 360.5096304806425 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 212
+    source 28
+    target 26
+    SBGN [
+      BendIn "2180.072780691613;1592.739996812923"
+      ID "arc96"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2180.072780691613 y 1592.739996812923 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 213
+    source 26
+    target 29
+    SBGN [
+      BendOut "2228.072780691613;1592.739996812923"
+      ID "arc97"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2228.072780691613 y 1592.739996812923 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 214
+    source 25
+    target 26
+    SBGN [
+      ID "arc98"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 215
+    source 29
+    target 27
+    SBGN [
+      BendIn "2269.5239122073035;1883.292054781923"
+      ID "arc99"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2269.5239122073035 y 1883.292054781923 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 216
+    source 27
+    target 28
+    SBGN [
+      BendOut "2221.5239122073035;1883.292054781923"
+      ID "arc100"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2221.5239122073035 y 1883.292054781923 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 217
+    source 28
+    target 107
+    SBGN [
+      BendIn "2107.609144097034;2039.1545228917576"
+      ID "arc101"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2107.609144097034 y 2039.1545228917576 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 218
+    source 29
+    target 109
+    SBGN [
+      BendIn "2387.1917877673914;1894.1024876567808"
+      ID "arc102"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2387.1917877673914 y 1894.1024876567808 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 219
+    source 112
+    target 30
+    SBGN [
+      BendOut "2375.267044981738;1350.266941443755"
+      ID "arc103"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2375.267044981738 y 1350.266941443755 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 220
+    source 114
+    target 32
+    SBGN [
+      BendOut "1689.2081925561251;1992.5341024819882"
+      ID "arc104"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1689.2081925561251 y 1992.5341024819882 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 221
+    source 30
+    target 114
+    SBGN [
+      ID "arc105"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 222
+    source 116
+    target 31
+    SBGN [
+      BendOut "348.43439441973715;1797.949205858793"
+      ID "arc106"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 348.43439441973715 y 1797.949205858793 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 223
+    source 32
+    target 116
+    SBGN [
+      ID "arc107"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      arrow "last"
+      arrowheadstyle "modulation"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      thickness 15.0
+    ]
+    sbgn [
+      role "MODULATION"
+    ]
+  ]
+  edge [
+    id 224
+    source 33
+    target 34
+    SBGN [
+      BendIn "621.7940171049031;773.1445202735749"
+      ID "arc108"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 621.7940171049031 y 773.1445202735749 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 225
+    source 35
+    target 36
+    SBGN [
+      BendOut "999.277866649214;953.4945117640007"
+      ID "arc109"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 999.277866649214 y 953.4945117640007 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 226
+    source 37
+    target 38
+    SBGN [
+      BendOut "520.7260222499972;868.4320776645379"
+      ID "arc110"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 520.7260222499972 y 868.4320776645379 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 227
+    source 39
+    target 40
+    SBGN [
+      BendOut "408.0641302183467;1527.0502611691927"
+      ID "arc111"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 408.0641302183467 y 1527.0502611691927 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 228
+    source 41
+    target 42
+    SBGN [
+      BendIn "806.1178088659453;1693.3240379982394"
+      ID "arc112"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 806.1178088659453 y 1693.3240379982394 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 229
+    source 43
+    target 44
+    SBGN [
+      BendOut "885.2616058687781;1803.6845479140475"
+      ID "arc113"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 885.2616058687781 y 1803.6845479140475 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 230
+    source 45
+    target 46
+    SBGN [
+      BendOut "778.7260884259395;1380.6502942798252"
+      ID "arc114"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 778.7260884259395 y 1380.6502942798252 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 231
+    source 47
+    target 48
+    SBGN [
+      BendOut "771.1571525577892;1019.5747000163883"
+      ID "arc115"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 771.1571525577892 y 1019.5747000163883 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 232
+    source 49
+    target 50
+    SBGN [
+      BendIn "436.1608657957149;1235.2049777477778"
+      ID "arc116"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 436.1608657957149 y 1235.2049777477778 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 233
+    source 51
+    target 52
+    SBGN [
+      BendIn "1361.2081313364397;855.1077894587604"
+      ID "arc117"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1361.2081313364397 y 855.1077894587604 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 234
+    source 53
+    target 54
+    SBGN [
+      BendOut "2479.475723856478;585.9194402578032"
+      ID "arc118"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2479.475723856478 y 585.9194402578032 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 235
+    source 55
+    target 56
+    SBGN [
+      BendIn "1312.170052571535;1051.5371927679141"
+      ID "arc119"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1312.170052571535 y 1051.5371927679141 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 236
+    source 57
+    target 58
+    SBGN [
+      BendOut "1067.2147324507168;1089.201075069685"
+      ID "arc120"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1067.2147324507168 y 1089.201075069685 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 237
+    source 59
+    target 60
+    SBGN [
+      BendIn "1562.8328951726726;696.6346025064938"
+      ID "arc121"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1562.8328951726726 y 696.6346025064938 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 238
+    source 61
+    target 62
+    SBGN [
+      BendOut "2887.463420439135;1256.3785255464554"
+      ID "arc122"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2887.463420439135 y 1256.3785255464554 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 239
+    source 63
+    target 64
+    SBGN [
+      BendOut "2138.1277573069783;250.7996531009669"
+      ID "arc123"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2138.1277573069783 y 250.7996531009669 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 240
+    source 65
+    target 66
+    SBGN [
+      BendIn "2039.3211323291744;781.8064758281173"
+      ID "arc124"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2039.3211323291744 y 781.8064758281173 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 241
+    source 67
+    target 68
+    SBGN [
+      BendOut "955.9079257663652;836.2869782531507"
+      ID "arc125"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 955.9079257663652 y 836.2869782531507 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 242
+    source 69
+    target 70
+    SBGN [
+      BendIn "1814.399688537982;334.16953588526667"
+      ID "arc126"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1814.399688537982 y 334.16953588526667 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 243
+    source 71
+    target 72
+    SBGN [
+      BendOut "2281.478919037754;349.57725346696"
+      ID "arc127"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2281.478919037754 y 349.57725346696 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 244
+    source 73
+    target 74
+    SBGN [
+      BendIn "1442.9184934997047;630.4363072364658"
+      ID "arc128"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1442.9184934997047 y 630.4363072364658 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 245
+    source 75
+    target 76
+    SBGN [
+      BendOut "1094.1318002329317;754.0438335982833"
+      ID "arc129"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1094.1318002329317 y 754.0438335982833 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 246
+    source 77
+    target 78
+    SBGN [
+      BendIn "1265.8087841325432;452.7495479354802"
+      ID "arc130"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1265.8087841325432 y 452.7495479354802 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 247
+    source 79
+    target 80
+    SBGN [
+      BendOut "2473.308589979373;1866.1226904743917"
+      ID "arc131"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2473.308589979373 y 1866.1226904743917 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 248
+    source 81
+    target 82
+    SBGN [
+      BendIn "948.3474766480631;1326.4434771744836"
+      ID "arc132"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 948.3474766480631 y 1326.4434771744836 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 249
+    source 83
+    target 84
+    SBGN [
+      BendOut "897.4537578771688;1169.581253909253"
+      ID "arc133"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 897.4537578771688 y 1169.581253909253 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 250
+    source 85
+    target 86
+    SBGN [
+      BendIn "2237.957117442853;1716.6513161760258"
+      ID "arc134"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2237.957117442853 y 1716.6513161760258 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 251
+    source 87
+    target 88
+    SBGN [
+      BendOut "2001.3511895137726;2071.5063194809204"
+      ID "arc135"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2001.3511895137726 y 2071.5063194809204 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 252
+    source 89
+    target 90
+    SBGN [
+      BendIn "1885.9280859609698;1849.3751741859578"
+      ID "arc136"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1885.9280859609698 y 1849.3751741859578 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 253
+    source 91
+    target 92
+    SBGN [
+      BendOut "1024.599603149185;1541.8465050244163"
+      ID "arc137"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1024.599603149185 y 1541.8465050244163 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 254
+    source 93
+    target 94
+    SBGN [
+      BendIn "1872.503269337083;1985.9773151076624"
+      ID "arc138"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1872.503269337083 y 1985.9773151076624 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 255
+    source 95
+    target 96
+    SBGN [
+      BendOut "2470.9450080635797;1151.360888236767"
+      ID "arc139"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2470.9450080635797 y 1151.360888236767 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 256
+    source 97
+    target 98
+    SBGN [
+      BendOut "2446.771304954498;1047.075927078671"
+      ID "arc140"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2446.771304954498 y 1047.075927078671 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 257
+    source 99
+    target 100
+    SBGN [
+      BendOut "2722.6537223329397;815.2711602340507"
+      ID "arc141"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2722.6537223329397 y 815.2711602340507 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 258
+    source 101
+    target 102
+    SBGN [
+      BendIn "2483.297553427912;762.8016670577986"
+      ID "arc142"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2483.297553427912 y 762.8016670577986 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 259
+    source 103
+    target 104
+    SBGN [
+      BendIn "2645.7251602302767;963.3920571924111"
+      ID "arc143"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2645.7251602302767 y 963.3920571924111 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 260
+    source 105
+    target 106
+    SBGN [
+      BendOut "2746.953707864246;1138.0929208218813"
+      ID "arc144"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2746.953707864246 y 1138.0929208218813 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 261
+    source 107
+    target 108
+    SBGN [
+      BendOut "2107.609144097034;2087.1545228917576"
+      ID "arc145"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2107.609144097034 y 2087.1545228917576 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 262
+    source 109
+    target 110
+    SBGN [
+      BendOut "2387.1917877673914;1942.1024876567808"
+      ID "arc146"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2387.1917877673914 y 1942.1024876567808 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "last"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "PRODUCTION"
+    ]
+  ]
+  edge [
+    id 263
+    source 111
+    target 112
+    SBGN [
+      BendIn "2423.267044981738;1350.266941443755"
+      ID "arc147"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 2423.267044981738 y 1350.266941443755 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 264
+    source 113
+    target 114
+    SBGN [
+      BendIn "1689.2081925561251;2040.5341024819882"
+      ID "arc148"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 1689.2081925561251 y 2040.5341024819882 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
+    ]
+  ]
+  edge [
+    id 265
+    source 115
+    target 116
+    SBGN [
+      BendIn "348.43439441973715;1845.949205858793"
+      ID "arc149"
+    ]
+    graphics [
+      fill "#000000"
+      outline "#000000"
+      Line [
+        point [ x 0.0 y 0.0 ]
+        point [ x 348.43439441973715 y 1845.949205858793 ]
+        point [ x 0.0 y 0.0 ]
+      ]
+      arrow "none"
+      frameThickness 1.5
+      gradient 0.0
+      opacity 1.0
+      rounding 5.0
+      type "org.graffiti.plugins.views.defaults.PolyLineEdgeShape"
+      thickness 15.0
+    ]
+    sbgn [
+      role "CONSUMPTION"
     ]
   ]
 ]
