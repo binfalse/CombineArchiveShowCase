@@ -97,6 +97,46 @@
 			<dcterms:W3CDTF>2015-06-10T19:25:12Z</dcterms:W3CDTF>
 		</dcterms:modified>
 	</rdf:Description>
+	<rdf:Description rdf:about="./metadata.rdf">
+		<dcterms:description>Metadata describing the content of the archive</dcterms:description>
+		<dcterms:creator>
+			<rdf:Bag>
+				<rdf:li rdf:parseType="Resource">
+					<vCard:n rdf:parseType="Resource">
+						<vCard:family-name>Schwarm</vCard:family-name>
+						<vCard:given-name>Martin</vCard:given-name>
+					</vCard:n>
+					<vCard:email>martin.scharm@uni-rostock.de</vCard:email>
+					<vCard:org rdf:parseType="Resource">
+						<vCard:organization-name>University of Rostock</vCard:organization-name>
+					</vCard:org>
+				</rdf:li>
+			</rdf:Bag>
+		</dcterms:creator>
+		<dcterms:creator>
+			<rdf:Bag>
+				<rdf:li rdf:parseType="Resource">
+					<vCard:n rdf:parseType="Resource">
+						<vCard:family-name>Koenig</vCard:family-name>
+						<vCard:given-name>Matthias</vCard:given-name>
+					</vCard:n>
+					<vCard:email>konigmatt@googlemail.com</vCard:email>
+					<vCard:org rdf:parseType="Resource">
+						<vCard:organization-name>Humboldt University Berlin</vCard:organization-name>
+					</vCard:org>
+				</rdf:li>
+			</rdf:Bag>
+		</dcterms:creator>
+		<dcterms:created rdf:parseType="Resource">
+			<dcterms:W3CDTF>2015-06-03T17:21:10Z</dcterms:W3CDTF>
+		</dcterms:created>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2015-06-03T17:21:10Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2016-10-13T09:40:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
+	</rdf:Description>
 	<rdf:Description rdf:about="./model/calzone_2007.svg">
 		<dcterms:description>Figure visualising the model described in /documentation/Calzone2007.pdf . This picture was downloaded from the CellML model repository May 27th, 2015.</dcterms:description>
 		<dcterms:creator>
