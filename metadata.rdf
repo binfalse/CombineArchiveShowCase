@@ -573,6 +573,9 @@
 		<dcterms:modified rdf:parseType="Resource">
 			<dcterms:W3CDTF>2016-08-30T11:43:27Z</dcterms:W3CDTF>
 		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2017-06-20T09:41:28Z</dcterms:W3CDTF>
+		</dcterms:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="/model/sbgn/Calzone2007.gml">
 		<dcterms:description>Figure visualising the model as encoded in /model/BIOMD0000000144.xml , created using SBGN-ED (VANTED V2.1.0).</dcterms:description>
@@ -618,6 +621,9 @@
 		</dcterms:modified>
 		<dcterms:modified rdf:parseType="Resource">
 			<dcterms:W3CDTF>2016-08-30T11:43:27Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2017-06-20T09:41:28Z</dcterms:W3CDTF>
 		</dcterms:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="/model/sbgn/Calzone2007.graphml">
@@ -665,6 +671,9 @@
 		<dcterms:modified rdf:parseType="Resource">
 			<dcterms:W3CDTF>2016-08-30T11:43:27Z</dcterms:W3CDTF>
 		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2017-06-20T09:41:28Z</dcterms:W3CDTF>
+		</dcterms:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="/model/sbgn/Calzone2007.pdf">
 		<dcterms:description>Figure visualising the model as encoded in /model/BIOMD0000000144.xml , created using SBGN-ED (VANTED V2.1.0).</dcterms:description>
@@ -707,6 +716,9 @@
 		</dcterms:modified>
 		<dcterms:modified rdf:parseType="Resource">
 			<dcterms:W3CDTF>2016-06-05T11:55:27Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2017-06-20T09:41:28Z</dcterms:W3CDTF>
 		</dcterms:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="/model/sbgn/Calzone2007.png">
@@ -753,6 +765,9 @@
 		</dcterms:modified>
 		<dcterms:modified rdf:parseType="Resource">
 			<dcterms:W3CDTF>2016-08-30T11:43:27Z</dcterms:W3CDTF>
+		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2017-06-20T09:41:28Z</dcterms:W3CDTF>
 		</dcterms:modified>
 	</rdf:Description>
 </rdf:RDF>
