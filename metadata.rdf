@@ -70,6 +70,9 @@
 		<dcterms:modified rdf:parseType="Resource">
 			<dcterms:W3CDTF>2016-10-13T09:40:00Z</dcterms:W3CDTF>
 		</dcterms:modified>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2017-10-19T12:00:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="./README.md">
 		<dcterms:description>README describing the archive</dcterms:description>
@@ -572,6 +575,52 @@
 		</dcterms:created>
 		<dcterms:modified rdf:parseType="Resource">
 			<dcterms:W3CDTF>2015-06-11T13:31:54Z</dcterms:W3CDTF>
+		</dcterms:modified>
+	</rdf:Description>
+	<rdf:Description rdf:about="./result/Fig1B-top-tellurium.pdf">
+		<dcterms:description>Simulation result obtained by executing the SED-ML script /experiment/Calzone2007-simulation-figure-1B.xml using tellurium (tellurium 2.0.5 (commit a519703))</dcterms:description>
+		<dcterms:creator>
+			<rdf:Bag>
+				<rdf:li rdf:parseType="Resource">
+					<vCard:n rdf:parseType="Resource">
+						<vCard:family-name>König</vCard:family-name>
+						<vCard:given-name>Matthias</vCard:given-name>
+					</vCard:n>
+					<vCard:email>konigmattt@googlemail.com</vCard:email>
+					<vCard:org rdf:parseType="Resource">
+						<vCard:organization-name>Humboldt University Berlin</vCard:organization-name>
+					</vCard:org>
+				</rdf:li>
+			</rdf:Bag>
+		</dcterms:creator>
+		<dcterms:created rdf:parseType="Resource">
+			<dcterms:W3CDTF>2017-10-19T12:00:00Z</dcterms:W3CDTF>
+		</dcterms:created>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2017-10-19T12:00:00Z</dcterms:W3CDTF>
+		</dcterms:modified>
+	</rdf:Description>
+	<rdf:Description rdf:about="./result/Fig1B-bottom-tellurium.pdf">
+		<dcterms:description>Simulation result obtained by executing the SED-ML script /experiment/Calzone2007-simulation-figure-1B.xml using tellurium (tellurium 2.0.5 (commit a519703))</dcterms:description>
+		<dcterms:creator>
+			<rdf:Bag>
+				<rdf:li rdf:parseType="Resource">
+					<vCard:n rdf:parseType="Resource">
+						<vCard:family-name>König</vCard:family-name>
+						<vCard:given-name>Matthias</vCard:given-name>
+					</vCard:n>
+					<vCard:email>konigmattt@googlemail.com</vCard:email>
+					<vCard:org rdf:parseType="Resource">
+						<vCard:organization-name>Humboldt University Berlin</vCard:organization-name>
+					</vCard:org>
+				</rdf:li>
+			</rdf:Bag>
+		</dcterms:creator>
+		<dcterms:created rdf:parseType="Resource">
+			<dcterms:W3CDTF>2017-10-19T12:00:00Z</dcterms:W3CDTF>
+		</dcterms:created>
+		<dcterms:modified rdf:parseType="Resource">
+			<dcterms:W3CDTF>2017-10-19T12:00:00Z</dcterms:W3CDTF>
 		</dcterms:modified>
 	</rdf:Description>
 	<rdf:Description rdf:about="./model/sbgn/Calzone2007.sbgn">
