@@ -1,6 +1,6 @@
 # CombineArchiveShowCase
 
-This is going to be a fully featured [CombineArchive](http://combinearchive.org) that will help demonstrating the concepts and best practices.
+This is a fully featured [CombineArchive](http://combinearchive.org) demonstrating the concepts and best practices.
 
 ## What's in here
 
@@ -30,3 +30,8 @@ To conveniently explore the contents of this CombineArchive you may open it in t
 [http://webcat.sems.uni-rostock.de/rest/import?name=AllSingingAllDancing&remote=http://scripts.sems.uni-rostock.de/getshowcase.php](http://webcat.sems.uni-rostock.de/rest/import?name=AllSingingAllDancing&remote=http://scripts.sems.uni-rostock.de/getshowcase.php)
 
 You can of course also clone this repository or [download the latest version of this archive](http://scripts.sems.uni-rostock.de/getshowcase.php).
+
+## Public
+
+The archive is published as [A fully featured COMBINE archive of a simulation study on syncytial mitotic cycles in Drosophila embryos](http://dx.doi.org/10.12688/f1000research.9379.1) in f1000Research and available from [Figshare](https://doi.org/10.6084/m9.figshare.3427271).
+
