@@ -299,8 +299,8 @@
 					<vCard:n rdf:parseType="Resource">
 						<vCard:family-name>Calzone</vCard:family-name>
 						<vCard:given-name>Laurence</vCard:given-name>
-								<vCard:email>laurence.calzone@curie.fr</vCard:email>
 					</vCard:n>
+					<vCard:email>laurence.calzone@curie.fr</vCard:email>
 					<vCard:org rdf:parseType="Resource">
 						<vCard:organization-name>Molecular Network Dynamics Research Group of Hungarian Academy of Sciences and Budapest University of Technology and Economics, Budapest</vCard:organization-name>
 					</vCard:org>
