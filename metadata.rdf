@@ -106,7 +106,7 @@
 			<rdf:Bag>
 				<rdf:li rdf:parseType="Resource">
 					<vCard:n rdf:parseType="Resource">
-						<vCard:family-name>Schwarm</vCard:family-name>
+						<vCard:family-name>Scharm</vCard:family-name>
 						<vCard:given-name>Martin</vCard:given-name>
 					</vCard:n>
 					<vCard:email>martin.scharm@uni-rostock.de</vCard:email>
